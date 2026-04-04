@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2601562430244871');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2601562430244871&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta name="facebook-domain-verification" content="tra3hzhnsq8njw3wcbxsq02fuwook9" />
+<head>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2601562430244871');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2601562430244871&ev=PageView&noscript=1"
+    /></noscript>
+    <meta name="facebook-domain-verification" content="tra3hzhnsq8njw3wcbxsq02fuwook9" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Pre-Owned Inventory | Fort Lauderdale Deals</title>
+    
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f7f6; margin: 0; padding: 0; color: #333; }
+        /* 1. Main page background set to your custom tan */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background: #edca85; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+        }
         
         /* THE NEW LOCAL VIBE HEADER */
         header { 
@@ -38,154 +45,26 @@ src="https://www.facebook.com/tr?id=2601562430244871&ev=PageView&noscript=1"
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
         
-        /* UPGRADED VEHICLE CARDS */
-        .vehicle-card { background: white; border-radius: 12px; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #eaeaea; }
+        /* 2. Frosted glass vehicle cards to blend with the tan */
+        .vehicle-card { 
+            background: rgba(255, 255, 255, 0.4); 
+            border-radius: 12px; 
+            padding: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            cursor: pointer; 
+            transition: transform 0.2s, box-shadow 0.2s; 
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+        }
         .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.15); }
-        .car-image { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; background: #e0e0e0; }
-        .vehicle-card h3 { margin: 0 0 10px 0; font-size: 18px; line-height: 1.4; color: #111; }
-        .vehicle-card .price { font-size: 26px; color: #28a745; font-weight: 800; margin: 0 0 5px 0; }
-        .vehicle-card .miles { color: #666; margin: 0 0 15px 0; font-size: 14px; font-weight: bold; }
-        .vehicle-card .btn { display: inline-block; background: #f1f1f1; color: #333; padding: 12px 15px; border: none; border-radius: 6px; font-weight: bold; width: 100%; text-align: center; cursor: pointer; transition: background 0.2s; }
-        .vehicle-card:hover .btn { background: #007bff; color: white; }
         
-        /* Modal Styles */
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.75); backdrop-filter: blur(5px); }
-        .modal-content { background-color: #fff; margin: 5vh auto; padding: 30px; border-radius: 12px; max-width: 600px; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.3); animation: slideIn 0.3s ease-out; max-height: 85vh; overflow-y: auto; }
-        @keyframes slideIn { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        .close { color: #aaa; float: right; font-size: 32px; font-weight: bold; cursor: pointer; line-height: 1; margin-top: -10px; }
-        .close:hover { color: #333; }
-        .modal-body { margin-top: 15px; }
-        .modal-image { width: 100%; border-radius: 8px; margin-bottom: 20px; }
-        .modal-price { font-size: 36px; color: #28a745; font-weight: 800; margin: 0 0 10px 0; }
-        .call-btn { display: block; background: #007bff; color: white; text-align: center; padding: 18px; border-radius: 8px; text-decoration: none; font-size: 20px; font-weight: bold; margin-top: 25px; box-shadow: 0 4px 15px rgba(0,123,255,0.4); transition: background 0.2s; }
-        .call-btn:hover { background: #0056b3; }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Fort Lauderdale Pre-Owned Deals</h1>
-    <p>Skip the games. Skip the hassle. The best local inventory direct to you.</p>
-</header>
-
-<div class="container">
-    <div class="grid">
-            <div class="vehicle-card" onclick="openModal('KL4MMCSL7PB160450')">
-                <img src="KL4MMCSL7PB160450.jpg" alt="2023 Buick Encore GX Preferred" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2023 Buick Encore GX Preferred</h3>
-                <p class="price">$20,237  </p>
-                <p class="miles">9,492 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1G1YA2D43N5111637')">
-                <img src="1G1YA2D43N5111637.jpg" alt="2022 Chevrolet Corvette Stingray 1LT" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2022 Chevrolet Corvette Stingray 1LT</h3>
-                <p class="price">$64,911  </p>
-                <p class="miles">5,714 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1GKS2JKL8PR457682')">
-                <img src="1GKS2JKL8PR457682.jpg" alt="2023 GMC Yukon XL Denali" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2023 GMC Yukon XL Denali</h3>
-                <p class="price">$61,674  </p>
-                <p class="miles">23,944 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('SALE2FEU1P2186914')">
-                <img src="SALE2FEU1P2186914.jpg" alt="2023 Land Rover Defender 130 X-Dynamic SE" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2023 Land Rover Defender 130 X-Dynamic SE</h3>
-                <p class="price">$59,802  </p>
-                <p class="miles">30,723 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1G1Y43D98K5800352')">
-                <img src="1G1Y43D98K5800352.jpg" alt="2019 Chevrolet Corvette ZR1" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2019 Chevrolet Corvette ZR1</h3>
-                <p class="price">$159,953  </p>
-                <p class="miles">18,114 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('W1KVK8AB8NF009635')">
-                <img src="W1KVK8AB8NF009635.jpg" alt="2022 Mercedes-Benz SL-Class SL 55 AMG® 4MATIC®" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2022 Mercedes-Benz SL-Class SL 55 AMG® 4MATIC®</h3>
-                <p class="price">$83,962  </p>
-                <p class="miles">9,329 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('ZN661XUA0PX420411')">
-                <img src="ZN661XUA0PX420411.jpg" alt="2023 Maserati Levante GT" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2023 Maserati Levante GT</h3>
-                <p class="price">$46,820  </p>
-                <p class="miles">14,346 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1G1YC3D43R5114107')">
-                <img src="1G1YC3D43R5114107.jpg" alt="2024 Chevrolet Corvette Stingray 3LT" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2024 Chevrolet Corvette Stingray 3LT</h3>
-                <p class="price">$76,854  </p>
-                <p class="miles">6,746 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1G1YC3D44N5120878')">
-                <img src="1G1YC3D44N5120878.jpg" alt="2022 Chevrolet Corvette Stingray 3LT" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2022 Chevrolet Corvette Stingray 3LT</h3>
-                <p class="price">$76,820  </p>
-                <p class="miles">4,582 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1G1YD2D74G5115376')">
-                <img src="1G1YD2D74G5115376.jpg" alt="2016 Chevrolet Corvette Stingray 2LT" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2016 Chevrolet Corvette Stingray 2LT</h3>
-                <p class="price">$43,419  </p>
-                <p class="miles">27,972 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-
-           <div class="vehicle-card" onclick="openModal('1G1YC2D45S5112679')">
-                <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=SOLD!" alt="2025 Chevrolet Corvette Stingray 3LT" class="car-image">
-                <h3>2025 Chevrolet Corvette Stingray 3LT</h3>
-                <p class="price" style="text-decoration: line-through; color: #999;">$82,965 </p>
-                <p class="miles" style="color: #dc3545; font-weight: 800;">SOLD OUT</p>
-                <button class="btn" style="background:#e0e0e0; cursor:default;">View Deal &rsaquo;</button>
-            </div>
-
-            <div class="vehicle-card" onclick="openModal('1GNSKFKD5MR343742')">
-                <img src="1GNSKFKD5MR343742.jpg" alt="2021 Chevrolet Suburban Premier" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=Photo+Coming+Soon'">
-                <h3>2021 Chevrolet Suburban Premier</h3>
-                <p class="price">$41,342  </p>
-                <p class="miles">78,353 miles</p>
-                <button class="btn">View Deal &rsaquo;</button>
-            </div>
-    </div>
-</div>
-
-<div id="KL4MMCSL7PB160450" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('KL4MMCSL7PB160450')">&times;</span><h2>2023 Buick Encore GX Preferred</h2><div class="modal-body"><img src="KL4MMCSL7PB160450.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$20,237 </p><p><strong>Mileage:</strong> 9,492 miles</p><p><strong>VIN:</strong> KL4MMCSL7PB160450</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1YA2D43N5111637" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1YA2D43N5111637')">&times;</span><h2>2022 Chevrolet Corvette Stingray 1LT</h2><div class="modal-body"><img src="1G1YA2D43N5111637.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$64,911 </p><p><strong>Mileage:</strong> 5,714 miles</p><p><strong>VIN:</strong> 1G1YA2D43N5111637</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1GKS2JKL8PR457682" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1GKS2JKL8PR457682')">&times;</span><h2>2023 GMC Yukon XL Denali</h2><div class="modal-body"><img src="1GKS2JKL8PR457682.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$61,674 </p><p><strong>Mileage:</strong> 23,944 miles</p><p><strong>VIN:</strong> 1GKS2JKL8PR457682</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="SALE2FEU1P2186914" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('SALE2FEU1P2186914')">&times;</span><h2>2023 Land Rover Defender 130 X-Dynamic SE</h2><div class="modal-body"><img src="SALE2FEU1P2186914.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$59,802 </p><p><strong>Mileage:</strong> 30,723 miles</p><p><strong>VIN:</strong> SALE2FEU1P2186914</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1Y43D98K5800352" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1Y43D98K5800352')">&times;</span><h2>2019 Chevrolet Corvette ZR1</h2><div class="modal-body"><img src="1G1Y43D98K5800352.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$159,953 </p><p><strong>Mileage:</strong> 18,114 miles</p><p><strong>VIN:</strong> 1G1Y43D98K5800352</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="W1KVK8AB8NF009635" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('W1KVK8AB8NF009635')">&times;</span><h2>2022 Mercedes-Benz SL-Class SL 55 AMG® 4MATIC®</h2><div class="modal-body"><img src="W1KVK8AB8NF009635.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$83,962 </p><p><strong>Mileage:</strong> 9,329 miles</p><p><strong>VIN:</strong> W1KVK8AB8NF009635</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="ZN661XUA0PX420411" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ZN661XUA0PX420411')">&times;</span><h2>2023 Maserati Levante GT</h2><div class="modal-body"><img src="ZN661XUA0PX420411.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$46,820 </p><p><strong>Mileage:</strong> 14,346 miles</p><p><strong>VIN:</strong> ZN661XUA0PX420411</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1YC3D43R5114107" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1YC3D43R5114107')">&times;</span><h2>2024 Chevrolet Corvette Stingray 3LT</h2><div class="modal-body"><img src="1G1YC3D43R5114107.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$76,854 </p><p><strong>Mileage:</strong> 6,746 miles</p><p><strong>VIN:</strong> 1G1YC3D43R5114107</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1YC3D44N5120878" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1YC3D44N5120878')">&times;</span><h2>2022 Chevrolet Corvette Stingray 3LT</h2><div class="modal-body"><img src="1G1YC3D44N5120878.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$76,820 </p><p><strong>Mileage:</strong> 4,582 miles</p><p><strong>VIN:</strong> 1G1YC3D44N5120878</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1YD2D74G5115376" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1YD2D74G5115376')">&times;</span><h2>2016 Chevrolet Corvette Stingray 2LT</h2><div class="modal-body"><img src="1G1YD2D74G5115376.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$43,419 </p><p><strong>Mileage:</strong> 27,972 miles</p><p><strong>VIN:</strong> 1G1YD2D74G5115376</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-<div id="1G1YC2D45S5112679" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1G1YC2D45S5112679')">&times;</span><h2>2025 Chevrolet Corvette Stingray 3LT</h2><div class="modal-body"><img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=SOLD!" class="modal-image"><p class="modal-price" style="text-decoration: line-through; color: #999;">$82,965</p><p><strong>Mileage:</strong> 2,041 miles</p><p><strong>VIN:</strong> 1G1YC2D45S5112679</p><p style="color:#dc3545; font-weight:bold;"><strong>Status:</strong> SOLD</p><p style="margin-top:20px; font-size:14px; color:#555;">This vehicle has recently been sold, but we get new inventory daily.</p><a href="tel:9542471621" class="call-btn" style="background:#6c757d; box-shadow:none;">Call (954) 247-1621 for Similar Vehicles</a></div></div></div>
-<div id="1GNSKFKD5MR343742" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1GNSKFKD5MR343742')">&times;</span><h2>2021 Chevrolet Suburban Premier</h2><div class="modal-body"><img src="1GNSKFKD5MR343742.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$41,342 </p><p><strong>Mileage:</strong> 78,353 miles</p><p><strong>VIN:</strong> 1GNSKFKD5MR343742</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
-
-<script>
-    function openModal(vin) { document.getElementById(vin).style.display = "block"; }
-    function closeModal(vin) { document.getElementById(vin).style.display = "none"; }
-    window.onclick = function(event) { if (event.target.classList.contains('modal')) { event.target.style.display = "none"; } }
-</script>
-
-</body>
-</html>
+        /* 3. Removed gray background behind images */
+        .car-image { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 15px; 
+            background: transparent; 
+        }
+        .vehicle-card h3 { margin: 0 0 10px 0; font-size: 18px; line-height: 1.4; color: #111; }
+        .vehicle-card .price { font-size: 26px
