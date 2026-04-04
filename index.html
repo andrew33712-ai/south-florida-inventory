@@ -45,17 +45,17 @@
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
         
-        /* 2. Frosted glass vehicle cards to blend with the tan */
+        /* 2. Solid white cards to pop off the tan background */
         .vehicle-card { 
-            background: rgba(255, 255, 255, 0.4); 
+            background: #ffffff; 
             border-radius: 12px; 
             padding: 15px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
             cursor: pointer; 
             transition: transform 0.2s, box-shadow 0.2s; 
-            border: 1px solid rgba(255, 255, 255, 0.5); 
+            border: none; 
         }
-        .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.15); }
+        .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
         
         /* 3. Removed gray background behind images */
         .car-image { 
@@ -67,4 +67,4 @@
             background: transparent; 
         }
         .vehicle-card h3 { margin: 0 0 10px 0; font-size: 18px; line-height: 1.4; color: #111; }
-        .vehicle-card .price { font-size: 26px
+        .vehicle-card .price
