@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{YEAR_MAKE_MODEL}} | Skipster Fort Lauderdale</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CSS Reset & Base Styles --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #F7F8FA; color: #1A1A1A; -webkit-font-smoothing: antialiased; line-height: 1.5; }
+
+        /* --- Sticky Header --- */
+        .header { position: sticky; top: 0; background-color: #FFFFFF; border-bottom: 1px solid #EAEAEA; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; color: #1A1A1A; text-decoration: none; }
+        .logo span { color: #00C853; }
+        .nav-links a { text-decoration: none; color: #666666; font-weight: 600; font-size: 14px; margin-left: 24px; transition: color 0.2s; }
+        .nav-links a:hover { color: #1A1A1A; }
+
+        /* --- Main Layout Container --- */
+        .vdp-container { max-width: 1200px; margin: 40px auto; padding: 0 24px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; align-items: start; }
+
+        /* --- Left Column: Vehicle Hero --- */
+        .vehicle-hero { width: 100%; }
+        .vehicle-hero img { width: 100%; height: auto; border-radius: 12px; object-fit: cover; box-shadow: 0 8px 24px rgba(0,0,0,0.06); background-color: #EAEAEA; }
+
+        /* --- Right Column: Buy Box --- */
+        .buy-box { background-color: #FFFFFF; padding: 32px; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); position: sticky; top: 100px; }
+        .buy-box h1 { font-size: 32px; font-weight: 800; line-height: 1.1; margin-bottom: 8px; letter-spacing: -1px; }
+        .mileage { font-size: 16px; color: #666666; font-weight: 600; margin-bottom: 24px; }
+        .price { font-size: 48px; font-weight: 800; color: #00C853; margin-bottom: 32px; letter-spacing: -1px; }
+
+        /* --- Trust Badges --- */
+        .trust-badges { margin-bottom: 32px; display: flex; flex-direction: column; gap: 16px; }
+        .badge-item { display: flex; align-items: center; font-size: 15px; font-weight: 600; color: #333333; }
+        .badge-icon { font-size: 20px; margin-right: 12px; background: #F7F8FA; padding: 8px; border-radius: 8px; }
+
+        /* --- Primary CTA Button (TEXT ONLY) --- */
+        .cta-container { margin-top: 20px; }
+        .cta-button { display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%; background-color: #007AFF; color: #FFFFFF; padding: 20px; border-radius: 12px; font-size: 20px; font-weight: 800; text-decoration: none; box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4); transition: transform 0.2s, background-color 0.2s; animation: pulse 2s infinite; }
+        .cta-button:hover { background-color: #0056b3; transform: translateY(-2px); animation: none; }
+        
+        .secondary-action { text-align: center; margin-top: 16px; font-size: 14px; color: #666666; }
+        .secondary-action a { color: #007AFF; text-decoration: none; font-weight: 600; }
+        .secondary-action a:hover { text-decoration: underline; }
+
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(0, 122, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 122, 255, 0); } }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .vdp-container { grid-template-columns: 1fr; gap: 24px; padding: 16px; margin: 0 auto; }
+            .buy-box { padding: 24px; position: static; }
+            .buy-box h1 { font-size: 28px; }
+            .price { font-size: 40px; }
+            .cta-button { min-height: 60px; padding: 18px; font-size: 18px; }
+            .nav-links a { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">Skipster <span>| Fort Lauderdale</span></a>
+            <nav class="nav-links">
+                <a href="/">Browse Inventory</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="vdp-container">
+        
+        <section class="vehicle-hero">
+            <img src="{{IMAGE_URL}}" alt="{{YEAR_MAKE_MODEL}}" onerror="this.src='https://via.placeholder.com/800x500?text=Photo+Coming+Soon'">
+        </section>
+
+        <section class="buy-box">
+            <h1>{{YEAR_MAKE_MODEL}}</h1>
+            <p class="mileage">{{MILEAGE}} Miles</p>
+            
+            <div class="price">${{PRICE}}</div>
+
+            <div class="trust-badges">
+                <div class="badge-item"><span class="badge-icon">🛡️</span> Local Dealer Verified</div>
+                <div class="badge-item"><span class="badge-icon">📜</span> Clean Title Guarantee</div>
+                <div class="badge-item"><span class="badge-icon">⏱️</span> Skip the Dealership Hassle</div>
+            </div>
+
+            <div class="cta-container">
+                <a href="sms:9542471621?body=Hi Skipster, is the {{YEAR_MAKE_MODEL}} still available?" class="cta-button">
+                    💬 Text for Availability
+                </a>
+                <p class="secondary-action">Prefer to call? <a href="tel:9542471621">(954) 247-1621</a></p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
