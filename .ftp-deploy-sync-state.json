@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1775855266547,
+    "generatedTime": 1775856451212,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6971,
-            "hash": "56543be5d2e20995032ee23e2698174260decd3e7217f06170c48bfc3420f22a"
+            "hash": "fc38be68d9b3cfb5abdb1a9e26524e8df2a13df726ca142dbda7bfca8ff1f0c9"
         },
         {
             "type": "file",
@@ -58,14 +58,14 @@
             "hash": "c0a2a559fd09af3b0c71074f0985dcfa09fab96cd88919fd7a0a90dd0419094a"
         },
         {
-            "type": "folder",
-            "name": "Skipster_Website"
-        },
-        {
             "type": "file",
             "name": "SALE2FEU1P2186914.jpg",
             "size": 1627386,
             "hash": "fac56ba9f5cedd44bcd7ff6b8ac284d7f5029cf69f2b18ea2be2459fcdd0566c"
+        },
+        {
+            "type": "folder",
+            "name": "Skipster_Website"
         },
         {
             "type": "file",
@@ -109,15 +109,15 @@
         },
         {
             "type": "file",
-            "name": "Skipster_Website/1G1Y43D98K5800352.jpg",
-            "size": 1750829,
-            "hash": "58bbcbd0a6567c245435b071df0ad7d581d2450dfdbb262d53fe2fa1d9456b3f"
-        },
-        {
-            "type": "file",
             "name": "Skipster_Website/1G1YA2D43N5111637.jpg",
             "size": 1299577,
             "hash": "592f8b22d3054189693d9e4221b3bebf0895dbf83b906277b2b73cb75ddf2b40"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1Y43D98K5800352.jpg",
+            "size": 1750829,
+            "hash": "58bbcbd0a6567c245435b071df0ad7d581d2450dfdbb262d53fe2fa1d9456b3f"
         },
         {
             "type": "file",
