@@ -21,3 +21,11 @@ jobs:
           protocol: ftp
           local-dir: ./
           server-dir: ./
+          dangerous-clean-slate: false
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'Inventory Bot'
+          git config --global user.email 'bot@skipster.ai'
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update inventory from HomeNet" && git push)
