@@ -1,0 +1,24 @@
+name: Sync HomeNet Inventory
+
+on:
+  schedule:
+    - cron: '0 * * * *' # This runs it every hour automatically
+  workflow_dispatch:     # This lets us run it manually right now
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Fetch CSV from FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./
+          server-dir: ./
+          state-name: .ftp-deploy-sync-state.json
