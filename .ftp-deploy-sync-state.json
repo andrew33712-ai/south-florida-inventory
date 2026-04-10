@@ -1,0 +1,189 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1775854621989,
+    "data": [
+        {
+            "type": "file",
+            "name": "1G1Y43D98K5800352.jpg",
+            "size": 1750829,
+            "hash": "58bbcbd0a6567c245435b071df0ad7d581d2450dfdbb262d53fe2fa1d9456b3f"
+        },
+        {
+            "type": "file",
+            "name": "1G1YA2D43N5111637.jpg",
+            "size": 1299577,
+            "hash": "592f8b22d3054189693d9e4221b3bebf0895dbf83b906277b2b73cb75ddf2b40"
+        },
+        {
+            "type": "file",
+            "name": "1G1YC3D43R5114107.jpg",
+            "size": 1576901,
+            "hash": "74ca850ebdcb2ef28ae0a8847f69ae55ee7c59d12446d4265a1ffcca795a99f1"
+        },
+        {
+            "type": "file",
+            "name": "1G1YC3D44N5120878.jpg",
+            "size": 1425224,
+            "hash": "6e3cc006cc1be3cc8623c6b9e568c7ba5523fb3ba72ae3d55be9897a81a34f39"
+        },
+        {
+            "type": "file",
+            "name": "1G1YD2D74G5115376.jpg",
+            "size": 1446715,
+            "hash": "051bc4d4d213a65cf5af6e686f26dd6fb111c7d8bf10c2bdafb3e63671a8a923"
+        },
+        {
+            "type": "file",
+            "name": "1GKS2JKL8PR457682.jpg",
+            "size": 1477296,
+            "hash": "3f6338607d9c4a79ba47ebe85431629284f9566203300bf2241c4e213931f6e9"
+        },
+        {
+            "type": "file",
+            "name": "1GNSKFKD5MR343742.jpg",
+            "size": 1586198,
+            "hash": "88b56ef37e1e2af99d2667799eada60b75bb35244d0a6385f17fb663d6422678"
+        },
+        {
+            "type": "file",
+            "name": "KL4MMCSL7PB160450.jpg",
+            "size": 1513211,
+            "hash": "c0a2a559fd09af3b0c71074f0985dcfa09fab96cd88919fd7a0a90dd0419094a"
+        },
+        {
+            "type": "file",
+            "name": "SALE2FEU1P2186914.jpg",
+            "size": 1627386,
+            "hash": "fac56ba9f5cedd44bcd7ff6b8ac284d7f5029cf69f2b18ea2be2459fcdd0566c"
+        },
+        {
+            "type": "folder",
+            "name": "Skipster_Website"
+        },
+        {
+            "type": "file",
+            "name": "W1KVK8AB8NF009635.jpg",
+            "size": 1681299,
+            "hash": "8dd48ec7401987b3ccc7951f0c862c0bf9dbe3e0dba055257e2ecea1f10a0bb9"
+        },
+        {
+            "type": "file",
+            "name": "ZN661XUA0PX420411.jpg",
+            "size": 1695410,
+            "hash": "d7be5eeb4777db3eaa78359348cdefa237bf5791121f1ddf66921333ca5387b9"
+        },
+        {
+            "type": "file",
+            "name": "bg.jpg",
+            "size": 1272059,
+            "hash": "78b730cbbd474bd1c60465c4ca8ce494bbef18006b8c0f26b08b02dbf713e6a3"
+        },
+        {
+            "type": "file",
+            "name": "build.js",
+            "size": 2435,
+            "hash": "592e7e9da5311e36640bf3d1be4fb0ef14af63a17ca6c2f541ba29c155ff8ae0"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 19703,
+            "hash": "4341ecee028ed37939e5e42d8db3db5665da6f70a41f9b0971d5388d75c247d5"
+        },
+        {
+            "type": "file",
+            "name": "inventory.csv",
+            "size": 8723,
+            "hash": "a47a70fef7cc43cbf2767a6059bebce8faada8ea2be0dd5c65ca6d07f1f55656"
+        },
+        {
+            "type": "folder",
+            "name": "src"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1Y43D98K5800352.jpg",
+            "size": 1750829,
+            "hash": "58bbcbd0a6567c245435b071df0ad7d581d2450dfdbb262d53fe2fa1d9456b3f"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1YA2D43N5111637.jpg",
+            "size": 1299577,
+            "hash": "592f8b22d3054189693d9e4221b3bebf0895dbf83b906277b2b73cb75ddf2b40"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1YC3D43R5114107.jpg",
+            "size": 1576901,
+            "hash": "74ca850ebdcb2ef28ae0a8847f69ae55ee7c59d12446d4265a1ffcca795a99f1"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1YC3D44N5120878.jpg",
+            "size": 1425224,
+            "hash": "6e3cc006cc1be3cc8623c6b9e568c7ba5523fb3ba72ae3d55be9897a81a34f39"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1YD2D74G5115376.jpg",
+            "size": 1446715,
+            "hash": "051bc4d4d213a65cf5af6e686f26dd6fb111c7d8bf10c2bdafb3e63671a8a923"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1GKS2JKL8PR457682.jpg",
+            "size": 1477296,
+            "hash": "3f6338607d9c4a79ba47ebe85431629284f9566203300bf2241c4e213931f6e9"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1GNSKFKD5MR343742.jpg",
+            "size": 1586198,
+            "hash": "88b56ef37e1e2af99d2667799eada60b75bb35244d0a6385f17fb663d6422678"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/KL4MMCSL7PB160450.jpg",
+            "size": 1513211,
+            "hash": "c0a2a559fd09af3b0c71074f0985dcfa09fab96cd88919fd7a0a90dd0419094a"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/SALE2FEU1P2186914.jpg",
+            "size": 1627386,
+            "hash": "fac56ba9f5cedd44bcd7ff6b8ac284d7f5029cf69f2b18ea2be2459fcdd0566c"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/W1KVK8AB8NF009635.jpg",
+            "size": 1681299,
+            "hash": "8dd48ec7401987b3ccc7951f0c862c0bf9dbe3e0dba055257e2ecea1f10a0bb9"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/ZN661XUA0PX420411.jpg",
+            "size": 1695410,
+            "hash": "d7be5eeb4777db3eaa78359348cdefa237bf5791121f1ddf66921333ca5387b9"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/bg.jpg",
+            "size": 1272059,
+            "hash": "78b730cbbd474bd1c60465c4ca8ce494bbef18006b8c0f26b08b02dbf713e6a3"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/index.html",
+            "size": 19385,
+            "hash": "0452b5560b8f2f7c11b09c49839b9ac52b01715e3ef3225d1bcace99af8daf16"
+        },
+        {
+            "type": "file",
+            "name": "src/vdp-template.html",
+            "size": 19370,
+            "hash": "0ba68ae688c9feaaa07fc952abfa97b841d19f5aee71f9e0930235b32976ebee"
+        }
+    ]
+}
