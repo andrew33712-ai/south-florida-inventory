@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1775870103309,
+    "generatedTime": 1775880654960,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6971,
-            "hash": "5f7844afb890113dce0a9e8e17fd82de6a93bc8bb438c191e0a786fd9a62e018"
+            "hash": "8b66c59186f087370a0563747e0b0c7aa3b9634d5f11c232a6fbc90c02a95817"
         },
         {
             "type": "file",
@@ -58,14 +58,14 @@
             "hash": "c0a2a559fd09af3b0c71074f0985dcfa09fab96cd88919fd7a0a90dd0419094a"
         },
         {
+            "type": "folder",
+            "name": "Skipster_Website"
+        },
+        {
             "type": "file",
             "name": "SALE2FEU1P2186914.jpg",
             "size": 1627386,
             "hash": "fac56ba9f5cedd44bcd7ff6b8ac284d7f5029cf69f2b18ea2be2459fcdd0566c"
-        },
-        {
-            "type": "folder",
-            "name": "Skipster_Website"
         },
         {
             "type": "file",
@@ -109,21 +109,27 @@
         },
         {
             "type": "file",
-            "name": "Skipster_Website/1G1YA2D43N5111637.jpg",
-            "size": 1299577,
-            "hash": "592f8b22d3054189693d9e4221b3bebf0895dbf83b906277b2b73cb75ddf2b40"
-        },
-        {
-            "type": "file",
             "name": "Skipster_Website/1G1Y43D98K5800352.jpg",
             "size": 1750829,
             "hash": "58bbcbd0a6567c245435b071df0ad7d581d2450dfdbb262d53fe2fa1d9456b3f"
         },
         {
             "type": "file",
+            "name": "Skipster_Website/1G1YA2D43N5111637.jpg",
+            "size": 1299577,
+            "hash": "592f8b22d3054189693d9e4221b3bebf0895dbf83b906277b2b73cb75ddf2b40"
+        },
+        {
+            "type": "file",
             "name": "Skipster_Website/1G1YC3D43R5114107.jpg",
             "size": 1576901,
             "hash": "74ca850ebdcb2ef28ae0a8847f69ae55ee7c59d12446d4265a1ffcca795a99f1"
+        },
+        {
+            "type": "file",
+            "name": "Skipster_Website/1G1YD2D74G5115376.jpg",
+            "size": 1446715,
+            "hash": "051bc4d4d213a65cf5af6e686f26dd6fb111c7d8bf10c2bdafb3e63671a8a923"
         },
         {
             "type": "file",
@@ -139,21 +145,15 @@
         },
         {
             "type": "file",
-            "name": "Skipster_Website/1G1YD2D74G5115376.jpg",
-            "size": 1446715,
-            "hash": "051bc4d4d213a65cf5af6e686f26dd6fb111c7d8bf10c2bdafb3e63671a8a923"
+            "name": "Skipster_Website/1GNSKFKD5MR343742.jpg",
+            "size": 1586198,
+            "hash": "88b56ef37e1e2af99d2667799eada60b75bb35244d0a6385f17fb663d6422678"
         },
         {
             "type": "file",
             "name": "Skipster_Website/KL4MMCSL7PB160450.jpg",
             "size": 1513211,
             "hash": "c0a2a559fd09af3b0c71074f0985dcfa09fab96cd88919fd7a0a90dd0419094a"
-        },
-        {
-            "type": "file",
-            "name": "Skipster_Website/1GNSKFKD5MR343742.jpg",
-            "size": 1586198,
-            "hash": "88b56ef37e1e2af99d2667799eada60b75bb35244d0a6385f17fb663d6422678"
         },
         {
             "type": "file",
