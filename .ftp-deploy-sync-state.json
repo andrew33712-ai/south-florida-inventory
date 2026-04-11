@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1775890079077,
+    "generatedTime": 1775893347483,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6971,
-            "hash": "bdb73531ef9025b82acf2d9cd2efef473a463c96382a7b36ac84086c420b0fc3"
+            "hash": "0d2109257f9063d4a974623110e898a24e224617275ae0c9d62cd0150d4b40b9"
         },
         {
             "type": "file",
@@ -64,14 +64,14 @@
             "hash": "fac56ba9f5cedd44bcd7ff6b8ac284d7f5029cf69f2b18ea2be2459fcdd0566c"
         },
         {
+            "type": "folder",
+            "name": "Skipster_Website"
+        },
+        {
             "type": "file",
             "name": "W1KVK8AB8NF009635.jpg",
             "size": 1681299,
             "hash": "8dd48ec7401987b3ccc7951f0c862c0bf9dbe3e0dba055257e2ecea1f10a0bb9"
-        },
-        {
-            "type": "folder",
-            "name": "Skipster_Website"
         },
         {
             "type": "file",
