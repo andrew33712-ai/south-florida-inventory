@@ -18,79 +18,66 @@
 
         
 
-        /* THE NEW LOCAL VIBE HEADER */
-
+      /* THE NEW LOCAL VIBE HEADER */
         header { 
-
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('bg.jpg') center/cover; 
-
+            background: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 60%, #f4f7f6 100%), 
+                url('bg.jpg') center/cover no-repeat; 
             color: white; 
-
             text-align: center; 
-
-            padding: 4rem 1rem; 
-
-            border-bottom: 5px solid #007bff;
-
+            padding: 5.5rem 1rem 4.5rem 1rem;
         }
-
-        header h1 { margin: 0; font-size: 36px; text-transform: uppercase; letter-spacing: 1px; }
-
-        header p { color: #f1f1f1; margin-top: 15px; font-size: 18px; font-weight: 500; }
-
+        header h1 { 
+            margin: 0; 
+            font-size: 40px; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: -0.5px; 
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+        }
+        header p { 
+            color: #e2e8f0; 
+            margin-top: 12px; 
+            font-size: 18px; 
+            font-weight: 400; 
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
         
-
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
-
         
-
         /* UPGRADED VEHICLE CARDS */
-
         .vehicle-card { background: white; border-radius: 12px; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #eaeaea; }
-
         .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.15); }
-
         .car-image { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; background: #e0e0e0; }
-
         .vehicle-card h3 { margin: 0 0 10px 0; font-size: 18px; line-height: 1.4; color: #111; }
-
         .vehicle-card .price { font-size: 26px; color: #28a745; font-weight: 800; margin: 0 0 5px 0; }
-
         .vehicle-card .miles { color: #666; margin: 0 0 15px 0; font-size: 14px; font-weight: bold; }
-
         .vehicle-card .btn { display: inline-block; background: #f1f1f1; color: #333; padding: 12px 15px; border: none; border-radius: 6px; font-weight: bold; width: 100%; text-align: center; cursor: pointer; transition: background 0.2s; }
-
         .vehicle-card:hover .btn { background: #007bff; color: white; }
-
         
-
         /* Modal Styles */
-
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.75); backdrop-filter: blur(5px); }
-
         .modal-content { background-color: #fff; margin: 5vh auto; padding: 30px; border-radius: 12px; max-width: 600px; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.3); animation: slideIn 0.3s ease-out; max-height: 85vh; overflow-y: auto; }
-
         @keyframes slideIn { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
         .close { color: #aaa; float: right; font-size: 32px; font-weight: bold; cursor: pointer; line-height: 1; margin-top: -10px; }
-
         .close:hover { color: #333; }
-
         .modal-body { margin-top: 15px; }
-
         .modal-image { width: 100%; border-radius: 8px; margin-bottom: 20px; }
-
         .modal-price { font-size: 36px; color: #28a745; font-weight: 800; margin: 0 0 10px 0; }
-
         .call-btn { display: block; background: #007bff; color: white; text-align: center; padding: 18px; border-radius: 8px; text-decoration: none; font-size: 20px; font-weight: bold; margin-top: 25px; box-shadow: 0 4px 15px rgba(0,123,255,0.4); transition: background 0.2s; }
-
         .call-btn:hover { background: #0056b3; }
-
     </style>
-
 </head>
+<body>
+
+<header>
+    <h1>Fort Lauderdale Pre-Owned Deals</h1>
+    <p>Skip the games. Skip the hassle. The best local inventory direct to you.</p>
+</header>
 
 <body>
 
