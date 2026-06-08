@@ -166,7 +166,7 @@
 <div id="1GNSKFKD5MR343742" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('1GNSKFKD5MR343742')">&times;</span><h2>2021 Chevrolet Suburban Premier</h2><div class="modal-body"><img src="1GNSKFKD5MR343742.jpg" class="modal-image" onerror="this.style.display='none'"><p class="modal-price">$41,342 </p><p><strong>Mileage:</strong> 78,353 miles</p><p><strong>VIN:</strong> 1GNSKFKD5MR343742</p><p><strong>Status:</strong> Clean Title, Dealer Inspected</p><p style="margin-top:20px; font-size:14px; color:#555;">To claim this local deal, call us immediately and reference the VIN above.</p><a href="tel:9542471621" class="call-btn">Call (954) 247-1621 to Check Availability</a></div></div></div>
 
 <script>
-    function openModal(vin) { document.getElementById(vin).style.display = "block"; }
+    function openModal(vin) { window.location.href = '../inventory/' + vin + '.html'; }
     function closeModal(vin) { document.getElementById(vin).style.display = "none"; }
     window.onclick = function(event) { if (event.target.classList.contains('modal')) { event.target.style.display = "none"; } }
 </script>
