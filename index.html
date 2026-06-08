@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-    
+   
     body { font-family: 'Inter', system-ui, sans-serif; }
     .heading { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
-    
+   
     .vehicle-card {
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -34,9 +34,9 @@
           <div class="text-[10px] text-zinc-400 -mt-1">TAMPA</div>
         </div>
       </div>
-      
+     
       <div class="flex items-center gap-x-3">
-        <a href="sms:8139938391" 
+        <a href="sms:8139938391"
            class="hidden md:flex items-center gap-x-2 px-5 py-2.5 rounded-2xl bg-white text-zinc-950 font-semibold text-sm hover:bg-zinc-100 transition-colors">
           <i class="fa-solid fa-comment-dots"></i>
           <span>Text Us</span>
@@ -161,7 +161,6 @@
 
     function createVehicleCard(vehicle) {
       const formattedPrice = vehicle.price.toLocaleString();
-      const smsBody = encodeURIComponent(`Hi Skipster, I'm interested in the ${vehicle.title} (${vehicle.vin})`);
       
       return `
         <div class="vehicle-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
@@ -175,7 +174,7 @@
               ${vehicle.mileage.toLocaleString()} miles
             </div>
           </div>
-          
+         
           <div class="p-5">
             <div class="flex justify-between items-start gap-4">
               <div class="min-w-0">
@@ -186,17 +185,25 @@
                 <div class="text-3xl font-semibold tracking-tighter">$${formattedPrice}</div>
               </div>
             </div>
-            
+           
             <div class="mt-5">
-              <a href="sms:8139938391?body=${smsBody}" 
-                 class="flex items-center justify-center gap-x-2 w-full bg-white hover:bg-zinc-100 active:bg-zinc-200 transition-colors text-zinc-950 font-semibold py-3.5 rounded-2xl text-sm">
+              <button 
+                onclick="sendText('${vehicle.title}')"
+                class="flex items-center justify-center gap-x-2 w-full bg-white hover:bg-zinc-100 active:bg-zinc-200 transition-colors text-zinc-950 font-semibold py-3.5 rounded-2xl text-sm">
                 <i class="fa-solid fa-comment-dots"></i>
                 <span>Text for Details</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
       `;
+    }
+
+    // New reliable function with your exact message
+    function sendText(vehicleTitle) {
+      const message = `I'm interested in the ${vehicleTitle}. Is it still available?`;
+      const encoded = encodeURIComponent(message);
+      window.location.href = `sms:8139938391?body=${encoded}`;
     }
 
     function renderVehicles(filteredVehicles) {
@@ -210,18 +217,15 @@
 
       function applyFilters() {
         let filtered = [...vehicles];
-
         const modelValue = modelFilter.value;
         if (modelValue) {
           filtered = filtered.filter(v => v.model.toLowerCase().includes(modelValue.toLowerCase()));
         }
-
         const sortValue = sortFilter.value;
         if (sortValue === 'price-low') filtered.sort((a, b) => a.price - b.price);
         else if (sortValue === 'price-high') filtered.sort((a, b) => b.price - a.price);
         else if (sortValue === 'mileage-low') filtered.sort((a, b) => a.mileage - b.mileage);
         else if (sortValue === 'newest') filtered.sort((a, b) => b.year - a.year);
-
         renderVehicles(filtered);
       }
 
