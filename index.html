@@ -67,9 +67,12 @@
       </p>
     </div>
 
-  </div>
-    <div class="mt-8 flex flex-col sm:flex-row gap-3">
-      <select id="modelFilter" class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-64">
+      <!-- Filter Bar -->
+    <div class="mt-8 flex flex-col sm:flex-row items-center gap-3">
+      
+      <!-- Model Filter -->
+      <select id="modelFilter" 
+              class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-52">
         <option value="">All Models</option>
         <option value="Corvette">Corvette</option>
         <option value="Encore">Encore GX</option>
@@ -79,21 +82,23 @@
         <option value="Maserati">Maserati</option>
       </select>
 
-      <select id="sortFilter" class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-52">
+      <!-- Sort Filter -->
+      <select id="sortFilter" 
+              class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-48">
         <option value="newest">Newest First</option>
         <option value="price-low">Price: Low to High</option>
         <option value="price-high">Price: High to Low</option>
         <option value="mileage-low">Lowest Mileage</option>
       </select>
 
+      <!-- CTA Button -->
       <button onclick="window.location.href='sms:8139938391?body=Hi%20Skipster%2C%20show%20me%20your%20best%20deals%20right%20now'"
-              class="flex items-center justify-center gap-x-2 bg-red-600 hover:bg-red-700 transition-colors px-8 py-3 rounded-2xl font-semibold text-sm whitespace-nowrap">
+              class="flex items-center justify-center gap-x-2 bg-red-600 hover:bg-red-700 transition-colors px-8 py-3 rounded-2xl font-semibold text-sm whitespace-nowrap w-full sm:w-auto">
         <i class="fa-solid fa-comment-dots"></i>
         <span>Text Me the Best Deals</span>
       </button>
-    </div>
-  </div>
 
+    </div>
   <!-- Vehicle Grid -->
   <div class="max-w-7xl mx-auto px-6 pb-16">
     <div id="vehicleGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
