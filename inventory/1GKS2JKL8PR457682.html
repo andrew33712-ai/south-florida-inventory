@@ -97,10 +97,30 @@
 
     <!-- POWERTRAIN CARD -->
     
-      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-        <h2 class="heading text-lg mb-2 text-zinc-200">Powertrain &amp; Specs</h2>
-        <p class="text-zinc-500 text-sm">Spec data unavailable for this vehicle.</p>
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="heading text-lg text-zinc-200">Powertrain &amp; Specs</h2>
+        <span class="text-[10px] uppercase tracking-widest text-zinc-500 bg-zinc-800 px-2 py-1 rounded-full">CarVector</span>
       </div>
+      <div class="grid grid-cols-3 gap-3 mb-5"><div class="bg-zinc-800 rounded-xl px-4 py-3 text-center"><div class="heading text-xl">6.2L</div><div class="text-[10px] uppercase tracking-widest text-zinc-500 mt-0.5">Engine</div></div><div class="bg-zinc-800 rounded-xl px-4 py-3 text-center"><div class="heading text-xl">420 HP</div><div class="text-[10px] uppercase tracking-widest text-zinc-500 mt-0.5">Power</div></div><div class="bg-zinc-800 rounded-xl px-4 py-3 text-center"><div class="heading text-xl">4WD</div><div class="text-[10px] uppercase tracking-widest text-zinc-500 mt-0.5">Drive</div></div></div>
+      <div>
+    <div class="spec-row">
+      <span class="text-zinc-400 text-sm">Engine</span>
+      <span class="text-sm font-semibold">6.2L</span>
+    </div>
+    <div class="spec-row">
+      <span class="text-zinc-400 text-sm">Horsepower</span>
+      <span class="text-sm font-semibold">420 HP</span>
+    </div>
+    <div class="spec-row">
+      <span class="text-zinc-400 text-sm">Transmission</span>
+      <span class="text-sm font-semibold">Automatic 10-spd</span>
+    </div>
+    <div class="spec-row">
+      <span class="text-zinc-400 text-sm">Drive Type</span>
+      <span class="text-sm font-semibold">4WD</span>
+    </div></div>
+    </div>
 
     <!-- VEHICLE DETAILS CARD -->
     <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
@@ -204,10 +224,18 @@
 
     <!-- FEDERAL SAFETY RECORD CARD -->
     
-      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-        <h2 class="heading text-lg mb-2 text-zinc-200">Federal Safety Record</h2>
-        <p class="text-zinc-500 text-sm">Recall data unavailable. Run build with CarVector API key to enable.</p>
+    <div class="recall-warn rounded-2xl p-6">
+      <div class="flex items-center gap-x-3 mb-3">
+        <div class="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+          <i class="fa-solid fa-triangle-exclamation text-amber-400 text-lg"></i>
+        </div>
+        <div>
+          <div class="heading text-base text-amber-300">4 Federal Recalls</div>
+          <div class="text-amber-700 text-xs mt-0.5">NHTSA database · Verify status before purchase</div>
+        </div>
       </div>
+      <p class="text-amber-700 text-xs">Check NHTSA.gov for full campaign details.</p>
+    </div>
 
   </div><!-- /RIGHT COLUMN -->
 
