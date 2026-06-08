@@ -127,6 +127,8 @@ async function fetchVehicleSpecs(year, make, model) {
   let vehicleId = null;
   if (Array.isArray(searchResult) && searchResult.length > 0) {
     vehicleId = searchResult[0].id;
+  } else if (searchResult?.results?.length > 0) {
+    vehicleId = searchResult.results[0].id;
   } else if (searchResult?.data?.length > 0) {
     vehicleId = searchResult.data[0].id;
   } else if (searchResult?.id) {
