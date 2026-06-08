@@ -214,10 +214,21 @@
       `;
     }
 
+    // Improved sendText function with desktop fallback
     function sendText(vehicleTitle) {
       const message = `I'm interested in the ${vehicleTitle}. Is it still available?`;
       const encoded = encodeURIComponent(message);
-      window.location.href = `sms:8139938391?body=${encoded}`;
+      const smsLink = `sms:8139938391?body=${encoded}`;
+      
+      // Try to open SMS app
+      window.location.href = smsLink;
+
+      // Desktop fallback - shows phone number if nothing happens
+      setTimeout(() => {
+        if (!document.hidden) {
+          alert(`Text us at: 813-993-8391\n\nMessage: ${message}`);
+        }
+      }, 1200);
     }
 
     function renderVehicles(filteredVehicles) {
