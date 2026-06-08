@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-   
+    
     body { font-family: 'Inter', system-ui, sans-serif; }
     .heading { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
-   
+    
     .vehicle-card {
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -22,6 +22,7 @@
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
+
   <!-- Header -->
   <header class="border-b border-zinc-800 bg-zinc-950 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
@@ -34,7 +35,7 @@
           <div class="text-[10px] text-zinc-400 -mt-1">TAMPA</div>
         </div>
       </div>
-     
+      
       <div class="flex items-center gap-x-3">
         <a href="sms:8139938391"
            class="hidden md:flex items-center gap-x-2 px-5 py-2.5 rounded-2xl bg-white text-zinc-950 font-semibold text-sm hover:bg-zinc-100 transition-colors">
@@ -44,7 +45,8 @@
       </div>
     </div>
   </header>
-    <!-- Hero with New Pirate Background -->
+
+  <!-- Hero with Pirate Background -->
   <div class="relative max-w-7xl mx-auto px-6 pt-10 pb-14">
     
     <!-- Background Image -->
@@ -66,11 +68,12 @@
         Text us for details or to schedule a viewing — we reply fast.
       </p>
     </div>
+  </div>
 
-      <!-- Filter Bar -->
-    <div class="mt-8 flex flex-col sm:flex-row items-center gap-3">
+  <!-- Filter Bar -->
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col sm:flex-row items-center gap-3">
       
-      <!-- Model Filter -->
       <select id="modelFilter" 
               class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-52">
         <option value="">All Models</option>
@@ -82,7 +85,6 @@
         <option value="Maserati">Maserati</option>
       </select>
 
-      <!-- Sort Filter -->
       <select id="sortFilter" 
               class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-48">
         <option value="newest">Newest First</option>
@@ -91,18 +93,18 @@
         <option value="mileage-low">Lowest Mileage</option>
       </select>
 
-      <!-- CTA Button -->
       <button onclick="window.location.href='sms:8139938391?body=Hi%20Skipster%2C%20show%20me%20your%20best%20deals%20right%20now'"
               class="flex items-center justify-center gap-x-2 bg-red-600 hover:bg-red-700 transition-colors px-8 py-3 rounded-2xl font-semibold text-sm whitespace-nowrap w-full sm:w-auto">
         <i class="fa-solid fa-comment-dots"></i>
         <span>Text Me the Best Deals</span>
       </button>
-
     </div>
+  </div>
+
   <!-- Vehicle Grid -->
-  <div class="max-w-7xl mx-auto px-6 pb-16">
+  <div class="max-w-7xl mx-auto px-6 pt-8 pb-16">
     <div id="vehicleGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <!-- Vehicles injected by JavaScript -->
+      <!-- Cards injected by JavaScript -->
     </div>
   </div>
 
@@ -111,10 +113,6 @@
   </footer>
 
   <script>
-    function initializeTailwind() {
-      // Ready for future Tailwind config
-    }
-
     const vehicles = [
       {
         vin: "KL4MMCSL7PB160450",
@@ -180,7 +178,6 @@
 
     function createVehicleCard(vehicle) {
       const formattedPrice = vehicle.price.toLocaleString();
-      
       return `
         <div class="vehicle-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
           <div class="relative">
@@ -193,7 +190,7 @@
               ${vehicle.mileage.toLocaleString()} miles
             </div>
           </div>
-         
+          
           <div class="p-5">
             <div class="flex justify-between items-start gap-4">
               <div class="min-w-0">
@@ -204,11 +201,10 @@
                 <div class="text-3xl font-semibold tracking-tighter">$${formattedPrice}</div>
               </div>
             </div>
-           
+            
             <div class="mt-5">
-              <button 
-                onclick="sendText('${vehicle.title}')"
-                class="flex items-center justify-center gap-x-2 w-full bg-white hover:bg-zinc-100 active:bg-zinc-200 transition-colors text-zinc-950 font-semibold py-3.5 rounded-2xl text-sm">
+              <button onclick="sendText('${vehicle.title}')"
+                      class="flex items-center justify-center gap-x-2 w-full bg-white hover:bg-zinc-100 active:bg-zinc-200 transition-colors text-zinc-950 font-semibold py-3.5 rounded-2xl text-sm">
                 <i class="fa-solid fa-comment-dots"></i>
                 <span>Text for Details</span>
               </button>
@@ -218,7 +214,6 @@
       `;
     }
 
-    // New reliable function with your exact message
     function sendText(vehicleTitle) {
       const message = `I'm interested in the ${vehicleTitle}. Is it still available?`;
       const encoded = encodeURIComponent(message);
@@ -253,10 +248,8 @@
     }
 
     function init() {
-      initializeTailwind();
       renderVehicles(vehicles);
       setupFilters();
-      console.log('%c[Skipster] Tampa version loaded', 'color:#666');
     }
 
     window.onload = init;
