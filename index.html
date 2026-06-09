@@ -86,8 +86,8 @@
         <a href="vdppage.html?vin=${vehicle.vin}" class="block">
           <div class="vehicle-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden">
             <div class="relative">
-              <img src="${vehicle.image}" class="w-full h-56 object-cover" 
-                   onerror="this.src='https://via.placeholder.com/600x400?text=No+Image'">
+              <img src="${vehicle.image}" loading="lazy" class="w-full h-56 object-cover"
+     onerror="this.src='https://via.placeholder.com/600x400?text=No+Image'">
               <div class="absolute top-4 right-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full">
                 ${vehicle.mileage.toLocaleString()} miles
               </div>
