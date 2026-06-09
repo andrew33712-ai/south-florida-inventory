@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-zinc-950 text-white">
-  <div class="max-w-4xl mx-auto p-6">
+  <main class="max-w-4xl mx-auto p-6">
     <h1 id="title" class="text-4xl font-bold mb-4"></h1>
     <p id="price" class="text-3xl text-red-500 font-semibold mb-2"></p>
     <p id="mileage" class="text-xl text-zinc-400 mb-6"></p>
-
     <img id="image" class="w-full max-w-lg rounded-2xl mb-6" alt="Car image">
 
-    <!-- Specs Grid -->
     <div id="specs" class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 hidden">
       <div class="bg-zinc-900 rounded-xl p-4">
         <p class="text-zinc-500 text-sm mb-1">Horsepower</p>
@@ -43,58 +41,65 @@
       </div>
     </div>
 
-    <!-- Recalls -->
     <div id="recall_section" class="mb-8 hidden">
-      <h2 class="text-2xl font-bold mb-4 text-red-500">⚠️ Active Recalls</h2>
+      <h2 class="text-2xl font-bold mb-4 text-red-500">Active Recalls</h2>
       <div id="recalls" class="space-y-4"></div>
     </div>
 
-    <button onclick="textDealer()"
-            class="bg-white text-zinc-950 px-8 py-4 rounded-2xl font-semibold flex items-center gap-x-2">
+    <button onclick="textDealer()" class="bg-white text-zinc-950 px-8 py-4 rounded-2xl font-semibold flex items-center gap-x-2">
       <i class="fa-solid fa-comment-dots"></i>
       <span>Text About This Vehicle</span>
     </button>
-  </div>
+  </main>
 
   <script>
     async function loadVehicle() {
-      const params = new URLSearchParams(window.location.search);
-      const vin = params.get('vin');
+      var params = new URLSearchParams(window.location.search);
+      var vin = params.get('vin');
       if (!vin) {
         document.body.innerHTML = "<h1 class='p-6'>No vehicle selected</h1>";
         return;
       }
+      try {
+        var res = await fetch('vehicles.json');
+        var vehicles = await res.json();
+        var vehicle = vehicles.find(function(v) { return v.vin === vin; });
+        if (!vehicle) {
+          document.body.innerHTML = "<h1 class='p-6'>Vehicle not found</h1>";
+          return;
+        }
+        document.getElementById('title').innerText = vehicle.title;
+        document.getElementById('price').innerText = '$' + vehicle.price.toLocaleString();
+        document.getElementById('mileage').innerText = vehicle.mileage.toLocaleString() + ' miles';
+        document.getElementById('image').src = vehicle.image;
 
-      const res = await fetch('vehicles.json');
-      const vehicles = await res.json();
-      const vehicle = vehicles.find(v => v.vin === vin);
+        var cv = vehicle.carVector;
+        if (cv) {
+          document.getElementById('specs').classList.remove('hidden');
+          document.getElementById('horsepower').innerText = cv.horsepower ? cv.horsepower + ' hp' : 'N/A';
+          document.getElementById('engine').innerText = (cv.displacement_l && cv.cylinders) ? cv.displacement_l + 'L ' + cv.cylinders + '-cyl' : 'N/A';
+          document.getElementById('transmission').innerText = cv.transmission || 'N/A';
+          document.getElementById('drive_type').innerText = cv.drive_type || 'N/A';
+          document.getElementById('fuel_type').innerText = cv.fuel_type || 'N/A';
+          document.getElementById('body_class').innerText = cv.body_class || 'N/A';
 
-      if (!vehicle) {
-        document.body.innerHTML = "<h1 class='p-6'>Vehicle not found</h1>";
-        return;
+          if (cv.recalls && cv.recalls.length > 0) {
+            document.getElementById('recall_section').classList.remove('hidden');
+            var recallDiv = document.getElementById('recalls');
+            for (var i = 0; i < cv.recalls.length; i++) {
+              var r = cv.recalls[i];
+              var div = document.createElement('div');
+              div.className = 'bg-zinc-900 border border-red-800 rounded-xl p-4';
+              div.innerHTML = '<p class="font-bold text-red-400 mb-1">' + r.component + '</p><p class="text-zinc-300 text-sm">' + r.summary + '</p><p class="text-zinc-400 text-sm mt-2">' + r.remedy + '</p>';
+              recallDiv.appendChild(div);
+            }
+          }
+        }
+      } catch(err) {
+        console.error('Failed to load vehicle:', err);
       }
-
-      document.getElementById('title').innerText = vehicle.title;
-      document.getElementById('price').innerText = '$' + vehicle.price.toLocaleString();
-      document.getElementById('mileage').innerText = vehicle.mileage.toLocaleString() + ' miles';
-      document.getElementById('image').src = vehicle.image;
-
-      // Load CarVector specs
-      const cv = vehicle.carVector;
-      if (cv) {
-        document.getElementById('specs').classList.remove('hidden');
-        document.getElementById('horsepower').innerText = cv.horsepower ? cv.horsepower + ' hp' : 'N/A';
-        document.getElementById('engine').innerText = cv.displacement_l && cv.cylinders ? cv.displacement_l + 'L ' + cv.cylinders + '-cyl' : 'N/A';
-        document.getElementById('transmission').innerText = cv.transmission || 'N/A';
-        document.getElementById('drive_type').innerText = cv.drive_type || 'N/A';
-        document.getElementById('fuel_type').innerText = cv.fuel_type || 'N/A';
-        document.getElementById('body_class').innerText = cv.body_class || 'N/A';
-
-        // Recalls
-        if (cv.recalls && cv.recalls.length > 0) {
-          document.getElementById('recall_section').classList.remove('hidden');
-          const recallDiv = document.getElementById('recalls');
-          cv.recalls.forEach(r => {
-            recallDiv.innerHTML += `
-              <div class="bg-zinc-900 border border-red-800 rounded-xl p-4">
-                <p class="font-bold text-red-400 mb-1">${r.comp
+    }
+    window.onload = loadVehicle;
+  </script>
+</body>
+</html>
