@@ -65,7 +65,7 @@
         return;
       }
 
-      const res = await fetch('vehicles_enriched.json');
+      const res = await fetch('vehicles.json');
       const vehicles = await res.json();
       const vehicle = vehicles.find(v => v.vin === vin);
 
