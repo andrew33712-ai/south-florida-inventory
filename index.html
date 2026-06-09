@@ -46,16 +46,13 @@
     </div>
   </header>
 
-  <!-- Hero with Pirate Background -->
+  <!-- Hero -->
   <div class="relative max-w-7xl mx-auto px-6 pt-10 pb-14">
-    
-    <!-- Background Image -->
     <div class="absolute inset-0 bg-cover bg-center rounded-3xl overflow-hidden"
          style="background-image: url('tampa-pirate-hero.jpg');">
       <div class="absolute inset-0 bg-black/60 rounded-3xl"></div>
     </div>
 
-    <!-- Hero Content -->
     <div class="relative max-w-2xl pt-8 pb-6">
       <div class="uppercase tracking-[3px] text-red-400 text-xs font-semibold mb-2">PRE-OWNED INVENTORY • TAMPA BAY</div>
       
@@ -74,8 +71,7 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-col sm:flex-row items-center gap-3">
       
-      <select id="modelFilter" 
-              class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-52">
+      <select id="modelFilter" class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-52">
         <option value="">All Models</option>
         <option value="Corvette">Corvette</option>
         <option value="Encore">Encore GX</option>
@@ -85,8 +81,7 @@
         <option value="Maserati">Maserati</option>
       </select>
 
-      <select id="sortFilter" 
-              class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-48">
+      <select id="sortFilter" class="bg-zinc-900 border border-zinc-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-red-600 w-full sm:w-48">
         <option value="newest">Newest First</option>
         <option value="price-low">Price: Low to High</option>
         <option value="price-high">Price: High to Low</option>
@@ -104,7 +99,7 @@
   <!-- Vehicle Grid -->
   <div class="max-w-7xl mx-auto px-6 pt-8 pb-16">
     <div id="vehicleGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <!-- Cards injected by JavaScript -->
+      <!-- Cards injected here -->
     </div>
   </div>
 
@@ -119,116 +114,55 @@
         title: "2023 Buick Encore GX Preferred",
         price: 20237,
         mileage: 9492,
-        image: "KL4MMCSL7PB160450.jpg",
         year: 2023,
         make: "Buick",
-        model: "Encore GX"
+        model: "Encore GX",
+        image: "KL4MMCSL7PB160450.jpg"
       },
       {
         vin: "1G1YA2D43N5111637",
         title: "2022 Chevrolet Corvette Stingray 1LT",
         price: 64911,
         mileage: 5714,
-        image: "1G1YA2D43N5111637.jpg",
         year: 2022,
         make: "Chevrolet",
-        model: "Corvette"
-      },
-      {
-        vin: "1GKS2JKL8PR457682",
-        title: "2023 GMC Yukon XL Denali",
-        price: 61674,
-        mileage: 23944,
-        image: "1GKS2JKL8PR457682.jpg",
-        year: 2023,
-        make: "GMC",
-        model: "Yukon XL"
-      },
-      {
-        vin: "SALE2FEU1P2186914",
-        title: "2023 Land Rover Defender 130 X-Dynamic SE",
-        price: 59802,
-        mileage: 30723,
-        image: "SALE2FEU1P2186914.jpg",
-        year: 2023,
-        make: "Land Rover",
-        model: "Defender"
-      },
-      {
-        vin: "1G1Y43D98K5800352",
-        title: "2019 Chevrolet Corvette ZR1",
-        price: 159953,
-        mileage: 18114,
-        image: "1G1Y43D98K5800352.jpg",
-        year: 2019,
-        make: "Chevrolet",
-        model: "Corvette ZR1"
-      },
-      {
-        vin: "W1KVK8AB8NF009635",
-        title: "2022 Mercedes-Benz SL 55 AMG",
-        price: 83962,
-        mileage: 9329,
-        image: "W1KVK8AB8NF009635.jpg",
-        year: 2022,
-        make: "Mercedes-Benz",
-        model: "SL-Class"
+        model: "Corvette",
+        image: "1G1YA2D43N5111637.jpg"
       }
+      // Add more vehicles here later
     ];
 
     function createVehicleCard(vehicle) {
       const formattedPrice = vehicle.price.toLocaleString();
-      return `
-        <div class="vehicle-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
-          <div class="relative">
-            <img src="${vehicle.image}" 
-                 alt="${vehicle.title}"
-                 class="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                 onerror="this.src='https://via.placeholder.com/600x400?text=Photo+Coming+Soon'">
-            
-            <div class="absolute top-4 right-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-medium">
-              ${vehicle.mileage.toLocaleString()} miles
-            </div>
-          </div>
-          
-          <div class="p-5">
-            <div class="flex justify-between items-start gap-4">
-              <div class="min-w-0">
-                <div class="font-semibold text-xl tracking-tight leading-tight">${vehicle.title}</div>
-                <div class="text-zinc-400 text-sm mt-1">Tampa Bay, FL</div>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <div class="text-3xl font-semibold tracking-tighter">$${formattedPrice}</div>
-              </div>
-            </div>
-            
-            <div class="mt-5">
-              <button onclick="sendText('${vehicle.title}')"
-                      class="flex items-center justify-center gap-x-2 w-full bg-white hover:bg-zinc-100 active:bg-zinc-200 transition-colors text-zinc-950 font-semibold py-3.5 rounded-2xl text-sm">
-                <i class="fa-solid fa-comment-dots"></i>
-                <span>Text for Details</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    // Improved sendText function with desktop fallback
-    function sendText(vehicleTitle) {
-      const message = `I'm interested in the ${vehicleTitle}. Is it still available?`;
-      const encoded = encodeURIComponent(message);
-      const smsLink = `sms:8139938391?body=${encoded}`;
       
-      // Try to open SMS app
-      window.location.href = smsLink;
-
-      // Desktop fallback - shows phone number if nothing happens
-      setTimeout(() => {
-        if (!document.hidden) {
-          alert(`Text us at: 813-993-8391\n\nMessage: ${message}`);
-        }
-      }, 1200);
+      return `
+        <a href="vdppage.html?vin=${vehicle.vin}" class="block">
+          <div class="vehicle-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden group">
+            <div class="relative">
+              <img src="${vehicle.image}" 
+                   alt="${vehicle.title}"
+                   class="w-full h-56 object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                   onerror="this.src='https://via.placeholder.com/600x400?text=Photo+Coming+Soon'">
+              
+              <div class="absolute top-4 right-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-medium">
+                ${vehicle.mileage.toLocaleString()} miles
+              </div>
+            </div>
+            
+            <div class="p-5">
+              <div class="flex justify-between items-start gap-4">
+                <div class="min-w-0">
+                  <div class="font-semibold text-xl tracking-tight leading-tight">${vehicle.title}</div>
+                  <div class="text-zinc-400 text-sm mt-1">Tampa Bay, FL</div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-3xl font-semibold tracking-tighter">$${formattedPrice}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      `;
     }
 
     function renderVehicles(filteredVehicles) {
