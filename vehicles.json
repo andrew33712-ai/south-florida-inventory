@@ -9,8 +9,6 @@
     "model": "Encore GX",
     "image": "KL4MMCSL7PB160450.jpg",
     "carVector": {
-      "id": "lf22ruh4aywo6ys",
-      "trim": null,
       "horsepower": 137,
       "cylinders": 3,
       "displacement_l": 1.2,
@@ -18,8 +16,6 @@
       "drive_type": "FWD",
       "fuel_type": "Gasoline",
       "body_class": "Small Sport Utility Vehicle 2WD",
-      "doors": null,
-      "recall_count": 0,
       "recalls": []
     }
   },
@@ -33,8 +29,6 @@
     "model": "Corvette",
     "image": "1G1YA2D43N5111637.jpg",
     "carVector": {
-      "id": "ohhz89towmishl7",
-      "trim": "Corvette",
       "horsepower": 490,
       "cylinders": 8,
       "displacement_l": 6.2,
@@ -42,16 +36,12 @@
       "drive_type": "RWD",
       "fuel_type": "Premium gasoline",
       "body_class": "Two Seaters",
-      "doors": 2,
-      "recall_count": 1,
       "recalls": [
         {
           "campaign_id": "22V091000",
           "component": "POWER TRAIN:DRIVELINE:DRIVESHAFT",
-          "summary": "GM is recalling certain 2021-2022 Chevrolet Corvette vehicles. The rear half-shaft assemblies may be missing ball bearings, resulting in loss of drive power.",
-          "consequence": "Loss of drive power increases risk of a crash.",
-          "remedy": "Dealers will replace rear half-shaft assemblies free of charge.",
-          "report_received": "17/02/2022"
+          "summary": "GM is recalling certain 2021-2022 Chevrolet Corvette vehicles. Rear half-shaft assemblies may be missing ball bearings, causing loss of drive power.",
+          "remedy": "Dealers will replace rear half-shaft assemblies free of charge."
         }
       ]
     }
@@ -66,8 +56,6 @@
     "model": "Yukon XL",
     "image": "1GKS2JKL8PR457682.jpg",
     "carVector": {
-      "id": "3aamzcmoidz0va7",
-      "trim": null,
       "horsepower": 420,
       "cylinders": 6,
       "displacement_l": 6.2,
@@ -75,7 +63,116 @@
       "drive_type": "RWD",
       "fuel_type": "Diesel",
       "body_class": "Standard Sport Utility Vehicle 2WD",
-      "doors": 4,
-      "recall_count": 1,
       "recalls": [
         {
+          "campaign_id": "25V274000",
+          "component": "ENGINE AND ENGINE COOLING",
+          "summary": "GM is recalling certain 2021-2024 GMC Yukon and Yukon XL vehicles with a 6.2L V8 engine. Crankshaft defects may cause engine failure.",
+          "remedy": "Dealers will inspect and repair or replace the engine free of charge."
+        }
+      ]
+    }
+  },
+  {
+    "vin": "SALE2FEU1P2186914",
+    "title": "2023 Land Rover Defender 130 X-Dynamic SE",
+    "price": 59802,
+    "mileage": 30723,
+    "year": 2023,
+    "make": "Land Rover",
+    "model": "Defender",
+    "image": "SALE2FEU1P2186914.jpg",
+    "carVector": {
+      "horsepower": 395,
+      "cylinders": null,
+      "displacement_l": 3.0,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "AWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Standard Sport Utility Vehicle 4WD",
+      "recalls": []
+    }
+  },
+  {
+    "vin": "1G1Y43D98K5800352",
+    "title": "2019 Chevrolet Corvette ZR1",
+    "price": 159953,
+    "mileage": 18114,
+    "year": 2019,
+    "make": "Chevrolet",
+    "model": "Corvette ZR1",
+    "image": "1G1Y43D98K5800352.jpg",
+    "carVector": {
+      "horsepower": 755,
+      "cylinders": 8,
+      "displacement_l": 6.2,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Two Seaters",
+      "recalls": [
+        {
+          "campaign_id": "18V360000",
+          "component": "AIR BAGS: AIR BAG CONTROL MODULE",
+          "summary": "GM is recalling certain 2019 Chevrolet Corvette ZR1 vehicles. Hard braking may cause the SDM to fault, preventing air bag deployment.",
+          "remedy": "Dealers will reprogram the SDM with updated software free of charge."
+        }
+      ]
+    }
+  },
+  {
+    "vin": "W1KVK8AB8NF009635",
+    "title": "2022 Mercedes-Benz SL 55 AMG",
+    "price": 83962,
+    "mileage": 9329,
+    "year": 2022,
+    "make": "Mercedes-Benz",
+    "model": "SL-Class",
+    "image": "W1KVK8AB8NF009635.jpg",
+    "carVector": null
+  },
+  {
+    "vin": "ZN661XUA0PX420411",
+    "title": "2023 Maserati Levante GT",
+    "price": 46820,
+    "mileage": 14346,
+    "year": 2023,
+    "make": "Maserati",
+    "model": "Levante GT",
+    "image": "ZN661XUA0PX420411.jpg",
+    "carVector": null
+  },
+  {
+    "vin": "1G1YC3D43R5114107",
+    "title": "2024 Chevrolet Corvette Stingray 3LT",
+    "price": 76854,
+    "mileage": 6746,
+    "year": 2024,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray 3LT",
+    "image": "1G1YC3D43R5114107.jpg",
+    "carVector": {
+      "horsepower": 670,
+      "cylinders": 8,
+      "displacement_l": 5.5,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Two Seaters",
+      "recalls": [
+        {
+          "campaign_id": "25V536000",
+          "component": "FUEL SYSTEM, GASOLINE",
+          "summary": "GM is recalling certain 2023-2026 Chevrolet Corvette vehicles. Excess fuel may spill into the fuel-filler pocket and leak onto an ignition source.",
+          "remedy": "Dealers will install a shield to divert spilled fuel free of charge."
+        },
+        {
+          "campaign_id": "24V418000",
+          "component": "SEAT BELTS:FRONT:RETRACTOR",
+          "summary": "GM is recalling certain 2024-2025 Chevrolet Corvette vehicles. Seat belt retractors may lock in a stowed position.",
+          "remedy": "Dealers will replace seat belt retractors free of charge."
+        }
+      ]
+    }
+  }
+]
