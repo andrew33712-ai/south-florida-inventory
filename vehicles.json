@@ -7,7 +7,22 @@
     "year": 2023,
     "make": "Buick",
     "model": "Encore GX",
-    "image": "KL4MMCSL7PB160450.jpg"
+    "image": "KL4MMCSL7PB160450.jpg",
+    "carVector": {
+      "id": "lf22ruh4aywo6ys",
+      "trim": null,
+      "horsepower": 137,
+      "cylinders": 3,
+      "displacement_l": 1.2,
+      "transmission": "CVT",
+      "drive_type": "FWD",
+      "fuel_type": "Gasoline",
+      "body_class": "Small Sport Utility Vehicle 2WD",
+      "doors": null,
+      "image_url": "https://vehicle.s3.us-east-005.backblazeb2.com/vehicles/2023/Buick/Encore/2023_Buick_Encore_92af7b85_00001_.png",
+      "recall_count": 0,
+      "recalls": []
+    }
   },
   {
     "vin": "1G1YA2D43N5111637",
@@ -17,7 +32,32 @@
     "year": 2022,
     "make": "Chevrolet",
     "model": "Corvette",
-    "image": "1G1YA2D43N5111637.jpg"
+    "image": "1G1YA2D43N5111637.jpg",
+    "carVector": {
+      "id": "ohhz89towmishl7",
+      "trim": "Corvette",
+      "horsepower": 490,
+      "cylinders": 8,
+      "displacement_l": 6.2,
+      "transmission": null,
+      "drive_type": "RWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Two Seaters",
+      "doors": 2,
+      "image_url": "https://vehicle.s3.us-east-005.backblazeb2.com/vehicles/2022/Chevrolet/Corvette/2022_Chevrolet_Corvette_17b7e427_00001_.png",
+      "recall_count": 1,
+      "recalls": [
+        {
+          "campaign_id": "22V091000",
+          "component": "POWER TRAIN:DRIVELINE:DRIVESHAFT",
+          "summary": "General Motors, LLC (GM) is recalling certain 2021-2022 Chevrolet Corvette vehicles. The rear half-shaft assemblies may be missing one or more ball bearings, which can result in a loss of drive power.",
+          "consequence": "An unexpected loss of drive power increases the risk of a crash.",
+          "remedy": "Dealers will replace the left or right rear half-shaft assemblies, as necessary, free of charge.",
+          "report_received": "17/02/2022",
+          "potentially_affected": null
+        }
+      ]
+    }
   },
   {
     "vin": "1GKS2JKL8PR457682",
@@ -27,7 +67,32 @@
     "year": 2023,
     "make": "GMC",
     "model": "Yukon XL",
-    "image": "1GKS2JKL8PR457682.jpg"
+    "image": "1GKS2JKL8PR457682.jpg",
+    "carVector": {
+      "id": "3aamzcmoidz0va7",
+      "trim": null,
+      "horsepower": 420,
+      "cylinders": 6,
+      "displacement_l": 6.2,
+      "transmission": "Automatic 10-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Diesel",
+      "body_class": "Standard Sport Utility Vehicle 2WD",
+      "doors": 4,
+      "image_url": "https://vehicle.s3.us-east-005.backblazeb2.com/vehicles/2023/GMC/Yukon/2023_GMC_Yukon_acc0deb8_00001_.png",
+      "recall_count": 4,
+      "recalls": [
+        {
+          "campaign_id": "25V274000",
+          "component": "ENGINE AND ENGINE COOLING:ENGINE:HARD PARTS INTERNAL/MECHANICAL",
+          "summary": "General Motors LLC (GM) is recalling certain 2021-2024 GMC Yukon and Yukon XL vehicles equipped with a 6.2L V8 gas engine. The connecting rod and/or crankshaft engine components may have manufacturing defects that can lead to engine damage and engine failure.",
+          "consequence": "Engine failure increases the risk of a crash.",
+          "remedy": "Dealers will inspect the engine, and as necessary, repair or replace the engine, free of charge.",
+          "report_received": "24/04/2025",
+          "potentially_affected": null
+        }
+      ]
+    }
   },
   {
     "vin": "SALE2FEU1P2186914",
@@ -37,46 +102,46 @@
     "year": 2023,
     "make": "Land Rover",
     "model": "Defender",
-    "image": "SALE2FEU1P2186914.jpg"
+    "image": "SALE2FEU1P2186914.jpg",
+    "carVector": {
+      "id": "4yfikihzkwpskc7",
+      "trim": null,
+      "horsepower": 395,
+      "cylinders": null,
+      "displacement_l": 3,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "AWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Standard Sport Utility Vehicle 4WD",
+      "doors": null,
+      "image_url": "https://vehicle.s3.us-east-005.backblazeb2.com/vehicles/2023/Land_Rover/Defender_110/2023_Land_Rover_Defender_110_grok_142dbff4.jpg",
+      "recall_count": 0,
+      "recalls": []
+    }
   },
   {
     "vin": "1G1Y43D98K5800352",
     "title": "2019 Chevrolet Corvette ZR1",
     "price": 159953,
     "mileage": 18114,
-    "year": 2019,
-    "make": "Chevrolet",
-    "model": "Corvette ZR1",
-    "image": "1G1Y43D98K5800352.jpg"
-  },
-  {
-    "vin": "W1KVK8AB8NF009635",
-    "title": "2022 Mercedes-Benz SL 55 AMG",
-    "price": 83962,
-    "mileage": 9329,
-    "year": 2022,
-    "make": "Mercedes-Benz",
-    "model": "SL-Class",
-    "image": "W1KVK8AB8NF009635.jpg"
-  },
-  {
-    "vin": "ZN661XUA0PX420411",
-    "title": "2023 Maserati Levante GT",
-    "price": 46820,
-    "mileage": 14346,
     "year": 2023,
-    "make": "Maserati",
-    "model": "Levante GT",
-    "image": "ZN661XUA0PX420411.jpg"
-  },
-  {
-    "vin": "1G1YC3D43R5114107",
-    "title": "2024 Chevrolet Corvette Stingray 3LT",
-    "price": 76854,
-    "mileage": 6746,
-    "year": 2024,
     "make": "Chevrolet",
-    "model": "Corvette Stingray 3LT",
-    "image": "1G1YC3D43R5114107.jpg"
-  }
-]
+    "model": "Corvette",
+    "image": "1G1Y43D98K5800352.jpg",
+    "carVector": {
+      "id": "3xrgrk5t9moz9j9",
+      "trim": "Corvette",
+      "horsepower": 455,
+      "cylinders": 8,
+      "displacement_l": 6.2,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Two Seaters",
+      "doors": null,
+      "image_url": "https://vehicle.s3.us-east-005.backblazeb2.com/vehicles/2019/Chevrolet/Corvette/2019_Chevrolet_Corvette_707b009c_00001_.png",
+      "recall_count": 1,
+      "recalls": [
+        {
+          "campaign_id": "18V360000",
+          "compon
