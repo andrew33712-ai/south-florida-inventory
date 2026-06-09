@@ -18,5 +18,65 @@
     "make": "Chevrolet",
     "model": "Corvette",
     "image": "1G1YA2D43N5111637.jpg"
+  },
+  {
+    "vin": "1GKS2JKL8PR457682",
+    "title": "2023 GMC Yukon XL Denali",
+    "price": 61674,
+    "mileage": 23944,
+    "year": 2023,
+    "make": "GMC",
+    "model": "Yukon XL",
+    "image": "1GKS2JKL8PR457682.jpg"
+  },
+  {
+    "vin": "SALE2FEU1P2186914",
+    "title": "2023 Land Rover Defender 130 X-Dynamic SE",
+    "price": 59802,
+    "mileage": 30723,
+    "year": 2023,
+    "make": "Land Rover",
+    "model": "Defender",
+    "image": "SALE2FEU1P2186914.jpg"
+  },
+  {
+    "vin": "1G1Y43D98K5800352",
+    "title": "2019 Chevrolet Corvette ZR1",
+    "price": 159953,
+    "mileage": 18114,
+    "year": 2019,
+    "make": "Chevrolet",
+    "model": "Corvette ZR1",
+    "image": "1G1Y43D98K5800352.jpg"
+  },
+  {
+    "vin": "W1KVK8AB8NF009635",
+    "title": "2022 Mercedes-Benz SL 55 AMG",
+    "price": 83962,
+    "mileage": 9329,
+    "year": 2022,
+    "make": "Mercedes-Benz",
+    "model": "SL-Class",
+    "image": "W1KVK8AB8NF009635.jpg"
+  },
+  {
+    "vin": "ZN661XUA0PX420411",
+    "title": "2023 Maserati Levante GT",
+    "price": 46820,
+    "mileage": 14346,
+    "year": 2023,
+    "make": "Maserati",
+    "model": "Levante GT",
+    "image": "ZN661XUA0PX420411.jpg"
+  },
+  {
+    "vin": "1G1YC3D43R5114107",
+    "title": "2024 Chevrolet Corvette Stingray 3LT",
+    "price": 76854,
+    "mileage": 6746,
+    "year": 2024,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray 3LT",
+    "image": "1G1YC3D43R5114107.jpg"
   }
 ]
