@@ -1,1 +1,22 @@
-
+[
+  {
+    "vin": "KL4MMCSL7PB160450",
+    "title": "2023 Buick Encore GX Preferred",
+    "price": 20237,
+    "mileage": 9492,
+    "year": 2023,
+    "make": "Buick",
+    "model": "Encore GX",
+    "image": "KL4MMCSL7PB160450.jpg"
+  },
+  {
+    "vin": "1G1YA2D43N5111637",
+    "title": "2022 Chevrolet Corvette Stingray 1LT",
+    "price": 64911,
+    "mileage": 5714,
+    "year": 2022,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "image": "1G1YA2D43N5111637.jpg"
+  }
+]
