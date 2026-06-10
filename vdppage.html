@@ -41,6 +41,11 @@
       </div>
     </div>
 
+    <!-- DESCRIPTION SECTION -->
+    <div id="description_section" class="mb-8 hidden">
+      <div id="description" class="text-zinc-300 text-lg leading-relaxed space-y-4"></div>
+    </div>
+
     <div id="recall_section" class="mb-8 hidden">
       <h2 class="text-2xl font-bold mb-4 text-red-500">Active Recalls</h2>
       <div id="recalls" class="space-y-4"></div>
@@ -68,10 +73,41 @@
           document.body.innerHTML = "<h1 class='p-6'>Vehicle not found</h1>";
           return;
         }
+
         document.getElementById('title').innerText = vehicle.title;
         document.getElementById('price').innerText = '$' + vehicle.price.toLocaleString();
         document.getElementById('mileage').innerText = vehicle.mileage.toLocaleString() + ' miles';
         document.getElementById('image').src = vehicle.image;
+
+        if (vehicle.description) {
+          document.getElementById('description_section').classList.remove('hidden');
+          var descDiv = document.getElementById('description');
+          var paragraphs = vehicle.description.split('\n\n');
+          for (var i = 0; i < paragraphs.length; i++) {
+            var para = paragraphs[i].trim();
+            if (!para) continue;
+            if (para.includes('\n- ') || para.startsWith('- ')) {
+              var lines = para.split('\n');
+              var ul = document.createElement('ul');
+              ul.className = 'list-none space-y-2 my-2';
+              for (var j = 0; j < lines.length; j++) {
+                var line = lines[j].trim();
+                if (line.startsWith('- ')) {
+                  var li = document.createElement('li');
+                  li.className = 'flex items-start gap-2 text-zinc-300';
+                  li.innerHTML = '<span class="text-red-500 mt-1">—</span><span>' + line.substring(2) + '</span>';
+                  ul.appendChild(li);
+                }
+              }
+              descDiv.appendChild(ul);
+            } else {
+              var p = document.createElement('p');
+              p.className = 'text-zinc-300 leading-relaxed';
+              p.innerText = para;
+              descDiv.appendChild(p);
+            }
+          }
+        }
 
         var cv = vehicle.carVector;
         if (cv) {
@@ -99,6 +135,11 @@
         console.error('Failed to load vehicle:', err);
       }
     }
+
+    function textDealer() {
+      window.location.href = 'sms:8139938391';
+    }
+
     window.onload = loadVehicle;
   </script>
 </body>
