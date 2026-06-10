@@ -1,99 +1,5 @@
 [
   {
-    "vin": "KL4MMCSL7PB160450",
-    "title": "2023 Buick Encore GX Preferred",
-    "price": 20237,
-    "mileage": 9492,
-    "year": 2023,
-    "make": "Buick",
-    "model": "Encore GX",
-    "image": "KL4MMCSL7PB160450.jpg",
-    "carVector": {
-      "horsepower": 137,
-      "cylinders": 3,
-      "displacement_l": 1.2,
-      "transmission": "CVT",
-      "drive_type": "FWD",
-      "fuel_type": "Gasoline",
-      "body_class": "Small Sport Utility Vehicle 2WD",
-      "recalls": []
-    }
-  },
-  {
-    "vin": "1G1YA2D43N5111637",
-    "title": "2022 Chevrolet Corvette Stingray 1LT",
-    "price": 64911,
-    "mileage": 5714,
-    "year": 2022,
-    "make": "Chevrolet",
-    "model": "Corvette",
-    "image": "1G1YA2D43N5111637.jpg",
-    "carVector": {
-      "horsepower": 490,
-      "cylinders": 8,
-      "displacement_l": 6.2,
-      "transmission": "Automatic 6-spd",
-      "drive_type": "RWD",
-      "fuel_type": "Premium gasoline",
-      "body_class": "Two Seaters",
-      "recalls": [
-        {
-          "campaign_id": "22V091000",
-          "component": "POWER TRAIN:DRIVELINE:DRIVESHAFT",
-          "summary": "GM is recalling certain 2021-2022 Chevrolet Corvette vehicles. Rear half-shaft assemblies may be missing ball bearings, causing loss of drive power.",
-          "remedy": "Dealers will replace rear half-shaft assemblies free of charge."
-        }
-      ]
-    }
-  },
-  {
-    "vin": "1GKS2JKL8PR457682",
-    "title": "2023 GMC Yukon XL Denali",
-    "price": 61674,
-    "mileage": 23944,
-    "year": 2023,
-    "make": "GMC",
-    "model": "Yukon XL",
-    "image": "1GKS2JKL8PR457682.jpg",
-    "carVector": {
-      "horsepower": 420,
-      "cylinders": 6,
-      "displacement_l": 6.2,
-      "transmission": "Automatic 10-spd",
-      "drive_type": "RWD",
-      "fuel_type": "Diesel",
-      "body_class": "Standard Sport Utility Vehicle 2WD",
-      "recalls": [
-        {
-          "campaign_id": "25V274000",
-          "component": "ENGINE AND ENGINE COOLING",
-          "summary": "GM is recalling certain 2021-2024 GMC Yukon and Yukon XL vehicles with a 6.2L V8 engine. Crankshaft defects may cause engine failure.",
-          "remedy": "Dealers will inspect and repair or replace the engine free of charge."
-        }
-      ]
-    }
-  },
-  {
-    "vin": "SALE2FEU1P2186914",
-    "title": "2023 Land Rover Defender 130 X-Dynamic SE",
-    "price": 59802,
-    "mileage": 30723,
-    "year": 2023,
-    "make": "Land Rover",
-    "model": "Defender",
-    "image": "SALE2FEU1P2186914.jpg",
-    "carVector": {
-      "horsepower": 395,
-      "cylinders": null,
-      "displacement_l": 3.0,
-      "transmission": "Automatic 8-spd",
-      "drive_type": "AWD",
-      "fuel_type": "Premium gasoline",
-      "body_class": "Standard Sport Utility Vehicle 4WD",
-      "recalls": []
-    }
-  },
-  {
     "vin": "1G1Y43D98K5800352",
     "title": "2019 Chevrolet Corvette ZR1",
     "price": 159953,
@@ -102,6 +8,7 @@
     "make": "Chevrolet",
     "model": "Corvette ZR1",
     "image": "1G1Y43D98K5800352.jpg",
+    "segment": "sport",
     "carVector": {
       "horsepower": 755,
       "cylinders": 8,
@@ -110,37 +17,9 @@
       "drive_type": "RWD",
       "fuel_type": "Premium gasoline",
       "body_class": "Two Seaters",
-      "recalls": [
-        {
-          "campaign_id": "18V360000",
-          "component": "AIR BAGS: AIR BAG CONTROL MODULE",
-          "summary": "GM is recalling certain 2019 Chevrolet Corvette ZR1 vehicles. Hard braking may cause the SDM to fault, preventing air bag deployment.",
-          "remedy": "Dealers will reprogram the SDM with updated software free of charge."
-        }
-      ]
-    }
-  },
-  {
-    "vin": "W1KVK8AB8NF009635",
-    "title": "2022 Mercedes-Benz SL 55 AMG",
-    "price": 83962,
-    "mileage": 9329,
-    "year": 2022,
-    "make": "Mercedes-Benz",
-    "model": "SL-Class",
-    "image": "W1KVK8AB8NF009635.jpg",
-    "carVector": null
-  },
-  {
-    "vin": "ZN661XUA0PX420411",
-    "title": "2023 Maserati Levante GT",
-    "price": 46820,
-    "mileage": 14346,
-    "year": 2023,
-    "make": "Maserati",
-    "model": "Levante GT",
-    "image": "ZN661XUA0PX420411.jpg",
-    "carVector": null
+      "recalls": [{"campaign_id": "18V360000", "component": "AIR BAGS: AIR BAG CONTROL MODULE", "summary": "Hard braking may cause the SDM to fault, preventing air bag deployment.", "remedy": "Dealers will reprogram the SDM with updated software free of charge."}]
+    },
+    "description": "If you've been watching ZR1 prices and waiting for the right one — this is it.\n\nThe 2019 Chevrolet Corvette ZR1 is the last of its kind. A supercharged 6.2L V8 pushing 755 horsepower, hand-built before GM changed direction entirely. New, these were pushing $130k base before options. Finding one under $160k with only 18,114 miles means someone bought it, drove it carefully, and now it's your turn.\n\nThis isn't a trailer queen. It's a car you actually drive.\n\n- 755hp supercharged V8 — factory, not modified\n- 18,114 miles — barely broken in for a ZR1\n- 8-speed automatic — more comfortable daily than you'd expect\n- Open recall on airbag software — free dealer fix, takes an hour\n- One of the last true American supercars at this price point\n\nIn South Florida, this car turns heads from Brickell to the Overseas Highway. Nothing else on the road touches it at this price.\n\nText us to take a look — we'll make time for serious buyers."
   },
   {
     "vin": "1G1YC3D43R5114107",
@@ -151,6 +30,7 @@
     "make": "Chevrolet",
     "model": "Corvette Stingray 3LT",
     "image": "1G1YC3D43R5114107.jpg",
+    "segment": "sport",
     "carVector": {
       "horsepower": 670,
       "cylinders": 8,
@@ -159,20 +39,122 @@
       "drive_type": "RWD",
       "fuel_type": "Premium gasoline",
       "body_class": "Two Seaters",
-      "recalls": [
-        {
-          "campaign_id": "25V536000",
-          "component": "FUEL SYSTEM, GASOLINE",
-          "summary": "GM is recalling certain 2023-2026 Chevrolet Corvette vehicles. Excess fuel may spill into the fuel-filler pocket and leak onto an ignition source.",
-          "remedy": "Dealers will install a shield to divert spilled fuel free of charge."
-        },
-        {
-          "campaign_id": "24V418000",
-          "component": "SEAT BELTS:FRONT:RETRACTOR",
-          "summary": "GM is recalling certain 2024-2025 Chevrolet Corvette vehicles. Seat belt retractors may lock in a stowed position.",
-          "remedy": "Dealers will replace seat belt retractors free of charge."
-        }
-      ]
-    }
+      "recalls": [{"campaign_id": "25V536000", "component": "FUEL SYSTEM, GASOLINE", "remedy": "Dealers will install a shield to divert spilled fuel free of charge."}]
+    },
+    "description": "A 2024 Corvette Stingray 3LT with 6,746 miles is about as close to new as pre-owned gets — without the new price.\n\nThe mid-engine C8 changed everything. With 670 horsepower from a flat-plane crank 5.5L V8, this is the Corvette that finally made Europe pay attention. The 3LT trim puts you in the top of the Stingray lineup — heated and ventilated seats, full leather, performance data recorder, the works.\n\nAnd at $76,854, you're saving real money over sticker while getting a car with barely any miles on it.\n\n- 670hp flat-plane V8 — exotic engine, American price\n- 6,746 miles — essentially new\n- 3LT top trim — fully loaded from the factory\n- Mid-engine balance — handles like nothing else at this price\n- Open recall on fuel shield — free dealer fix, no drama\n\nDrive it down A1A with the top off on a Saturday morning and you'll wonder why you waited this long.\n\nText us and let's get you behind the wheel."
+  },
+  {
+    "vin": "1G1YA2D43N5111637",
+    "title": "2022 Chevrolet Corvette Stingray 1LT",
+    "price": 64911,
+    "mileage": 5714,
+    "year": 2022,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "image": "1G1YA2D43N5111637.jpg",
+    "segment": "sport",
+    "carVector": {
+      "horsepower": 490,
+      "cylinders": 8,
+      "displacement_l": 6.2,
+      "transmission": "Automatic 6-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Two Seaters",
+      "recalls": [{"campaign_id": "22V091000", "component": "POWER TRAIN:DRIVELINE:DRIVESHAFT", "remedy": "Dealers will replace rear half-shaft assemblies free of charge."}]
+    },
+    "description": "The entry point into C8 ownership just got a lot more interesting.\n\nThis 2022 Chevrolet Corvette Stingray has 5,714 miles and comes in under $65k — which means you're getting the mid-engine revolution at a price that was impossible two years ago. The 490hp 6.2L V8 isn't slow by any stretch, and the C8 platform means the weight is behind you where it belongs.\n\nFor a lot of buyers, the 1LT is the sweet spot. You get the chassis, the engine, and the looks without paying for options you'll never use on the street.\n\n- 490hp mid-engine V8 — the layout that changed Corvette forever\n- 5,714 miles — one careful previous owner\n- Under $65k — C8 money that actually makes sense\n- No open recalls — clean and ready to drive\n- Turns the same heads as a $100k exotic on Biscayne Bay\n\nSouth Florida traffic hits different when you're low to the ground in something that sounds like this.\n\nText us to set up a time — this one won't last."
+  },
+  {
+    "vin": "W1KVK8AB8NF009635",
+    "title": "2022 Mercedes-Benz SL 55 AMG",
+    "price": 83962,
+    "mileage": 9329,
+    "year": 2022,
+    "make": "Mercedes-Benz",
+    "model": "SL-Class",
+    "image": "W1KVK8AB8NF009635.jpg",
+    "segment": "luxury",
+    "carVector": null,
+    "description": "There's a short list of convertibles that make South Florida feel like it was built for you. The 2022 Mercedes-Benz SL 55 AMG is at the top of it.\n\nThe redesigned SL came back with AMG DNA baked in from the start — not bolted on after the fact. The 4.0L twin-turbo V8 in the 55 makes 469 horsepower and pairs with a 9-speed AMG Speedshift that reads your mood before you do. At 9,329 miles, this one is barely past its break-in period.\n\nAnd at $83,962, you're getting a car that stickered well north of $120k when new.\n\n- 469hp twin-turbo AMG V8 — effortless power, no drama\n- 9,329 miles — essentially showroom fresh\n- Retractable hardtop — open on the causeways, closed when it storms\n- Full AMG interior — this is not a base SL with a badge\n- $35k+ in instant depreciation already absorbed by the first owner\n\nValet it in South Beach on a Friday night and you'll understand exactly what you paid for.\n\nText us — this is the kind of car we like talking about."
+  },
+  {
+    "vin": "ZN661XUA0PX420411",
+    "title": "2023 Maserati Levante GT",
+    "price": 46820,
+    "mileage": 14346,
+    "year": 2023,
+    "make": "Maserati",
+    "model": "Levante GT",
+    "image": "ZN661XUA0PX420411.jpg",
+    "segment": "luxury",
+    "carVector": null,
+    "description": "You want something that doesn't look like every other luxury SUV in the Whole Foods parking lot. That's the Maserati Levante GT.\n\nThe 2023 Levante GT carries a 3.0L twin-turbo V6 making 345 horsepower, an 8-speed ZF transmission, and a exhaust note that no German SUV can touch. It's Italian in the best way — built to be driven, not just admired. At 14,346 miles it's well past the break-in nerves and into the sweet spot.\n\nAnd at $46,820, you're getting a genuine Italian luxury SUV for the price of a loaded Bronco.\n\n- Twin-turbo V6 — 345hp with a soundtrack to match\n- 14,346 miles — lightly used, plenty of life left\n- Full Maserati luxury interior — this is the GT trim\n- AWD — handles Florida downpours without missing a beat\n- Under $47k for a Maserati — the depreciation curve did the work for you\n\nIn a market full of Range Rovers and GLE's, the Levante is the one people actually ask about in the parking garage.\n\nText us to take a look — it drives better than it has any right to at this price."
+  },
+  {
+    "vin": "1GKS2JKL8PR457682",
+    "title": "2023 GMC Yukon XL Denali",
+    "price": 61674,
+    "mileage": 23944,
+    "year": 2023,
+    "make": "GMC",
+    "model": "Yukon XL",
+    "image": "1GKS2JKL8PR457682.jpg",
+    "segment": "luxury-suv",
+    "carVector": {
+      "horsepower": 420,
+      "cylinders": 6,
+      "displacement_l": 6.2,
+      "transmission": "Automatic 10-spd",
+      "drive_type": "RWD",
+      "fuel_type": "Diesel",
+      "body_class": "Standard Sport Utility Vehicle 2WD",
+      "recalls": [{"campaign_id": "25V274000", "component": "ENGINE AND ENGINE COOLING", "remedy": "Dealers will inspect and repair or replace the engine free of charge."}]
+    },
+    "description": "When you need to move the whole crew in comfort and you're not apologizing for the size — this is the truck.\n\nThe 2023 GMC Yukon XL Denali is the top of the full-size SUV food chain. Third-row seating, 420 horsepower, magnetic ride control, and a Denali interior that makes other SUVs feel like rental cars. The XL gives you the extra wheelbase — real third-row space, not the folded-pretzel situation in shorter SUVs.\n\nAt $61,674 with 23,944 miles, you're saving $25k or more off what these cost new without giving up anything that matters.\n\n- 420hp 6.2L V8 — pulls a boat, passes on the highway, does it all\n- Denali trim — top of the lineup, fully loaded\n- XL wheelbase — actual third-row room for actual adults\n- Open recall on engine — free dealer inspection and repair\n- Under $62k for a loaded Denali XL — the math works\n\nFlorida living means road trips to the Keys, beach gear for six, and hurricane season runs to Costco. This handles all of it without breaking a sweat.\n\nText us to take a look — Denali XLs at this price move fast."
+  },
+  {
+    "vin": "SALE2FEU1P2186914",
+    "title": "2023 Land Rover Defender 130 X-Dynamic SE",
+    "price": 59802,
+    "mileage": 30723,
+    "year": 2023,
+    "make": "Land Rover",
+    "model": "Defender",
+    "image": "SALE2FEU1P2186914.jpg",
+    "segment": "luxury",
+    "carVector": {
+      "horsepower": 395,
+      "cylinders": null,
+      "displacement_l": 3.0,
+      "transmission": "Automatic 8-spd",
+      "drive_type": "AWD",
+      "fuel_type": "Premium gasoline",
+      "body_class": "Standard Sport Utility Vehicle 4WD",
+      "recalls": []
+    },
+    "description": "Most SUVs are built to look adventurous. The 2023 Land Rover Defender 130 is built to actually be adventurous — and it cleans up well enough for valet too.\n\nThe 130 is the long-wheelbase Defender — three rows, eight seats, 395 horsepower from a 3.0L inline-six, and AWD that was engineered by people who take off-road capability personally. The X-Dynamic SE trim adds the sport styling package without losing any of the capability underneath.\n\nAt $59,802 with 30,723 miles, someone else absorbed the brutal first-year depreciation on a $90k+ vehicle. That's your gain.\n\n- 395hp inline-six — smooth, fast, and sounds serious\n- 130 wheelbase — three real rows, eight real seats\n- AWD with terrain management — built for more than school pickup\n- No open recalls — clean title, ready to go\n- X-Dynamic SE — the sport trim that still looks the part anywhere\n\nDrive it to the Everglades on Saturday. Park it in Coconut Grove on Saturday night. It fits both without trying.\n\nText us to schedule a walkthrough — this one is worth seeing in person."
+  },
+  {
+    "vin": "KL4MMCSL7PB160450",
+    "title": "2023 Buick Encore GX Preferred",
+    "price": 20237,
+    "mileage": 9492,
+    "year": 2023,
+    "make": "Buick",
+    "model": "Encore GX",
+    "image": "KL4MMCSL7PB160450.jpg",
+    "segment": "daily",
+    "carVector": {
+      "horsepower": 137,
+      "cylinders": 3,
+      "displacement_l": 1.2,
+      "transmission": "CVT",
+      "drive_type": "FWD",
+      "fuel_type": "Gasoline",
+      "body_class": "Small Sport Utility Vehicle 2WD",
+      "recalls": []
+    },
+    "description": "Not every car needs to be a statement. Sometimes you just need something reliable, comfortable, and smart on gas — without feeling like you settled.\n\nThe 2023 Buick Encore GX Preferred hits that mark cleanly. It's a small SUV with a premium interior, a quiet ride, and 9,492 miles on it — meaning the previous owner barely put a dent in the warranty. At $20,237 it's one of the best dollar-per-feature deals in the lot.\n\nBuick punches above its price point on interior quality. Sit in one back to back with something twice the price and you'll notice.\n\n- 9,492 miles — barely used, feels brand new\n- Buick quiet-tune cabin — genuinely hushed on the highway\n- CVT transmission — smooth in South Florida stop-and-go\n- No open recalls — clean and ready\n- Under $21k for a 2023 model — hard to argue with the math\n\nFor Tampa Bay commutes, weekend errands, and keeping the miles off your other vehicle — this is the practical call that doesn't feel like a compromise.\n\nText us to take a look — easy car to say yes to."
   }
 ]
