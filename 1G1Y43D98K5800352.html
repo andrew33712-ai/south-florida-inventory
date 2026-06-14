@@ -1,36 +1,136 @@
-/**
- * inject-zr1.js
- * Writes the ZR1 description directly into vehicles.json
- * Run: node inject-zr1.js
- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019 Chevrolet Corvette ZR1 — 18,114 Miles | $159,953 | Skipster South Florida</title>
+  <meta name="description" content="The 2019 Chevrolet Corvette ZR1 is available now at Skipster South Florida for $159,953 with 18,114 miles. . Text us to take a look.">
+  <meta property="og:title" content="2019 Chevrolet Corvette ZR1 — 18,114 Miles | $159,953 | Skipster South Florida">
+  <meta property="og:description" content="The 2019 Chevrolet Corvette ZR1 is available now at Skipster South Florida for $159,953 with 18,114 miles. . Text us to take a look.">
+  <meta property="og:image" content="https://southflorida.skipster.ai/images/1G1Y43D98K5800352.jpg">
+  <meta property="og:url" content="https://southflorida.skipster.ai/1G1Y43D98K5800352.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://southflorida.skipster.ai/1G1Y43D98K5800352.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Vehicle","name":"2019 Chevrolet Corvette ZR1","vehicleIdentificationNumber":"1G1Y43D98K5800352","modelDate":"2019","brand":{"@type":"Brand","name":"Chevrolet"},"model":"Corvette ZR1","mileageFromOdometer":{"@type":"QuantitativeValue","value":18114,"unitCode":"SMI"},"offers":{"@type":"Offer","price":"159953.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://southflorida.skipster.ai/1G1Y43D98K5800352.html"},"vehicleTransmission":"7-Speed Manual with Active Rev Matching","color":"Torch Red","bodyType":"CONVERTIBLE","image":"https://southflorida.skipster.ai/images/1G1Y43D98K5800352.jpg","seller":{"@type":"AutoDealer","name":"Grieco Chevrolet of Fort Lauderdale"},"description":"The 2019 Chevrolet Corvette ZR1 is available now at Skipster South Florida for $159,953 with 18,114 miles. . Text us to take a look."}</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #18181b;
+      color: #f4f4f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    a { color: #ef4444; text-decoration: none; }
+    .container { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { padding: 20px 0 32px; border-bottom: 1px solid #3f3f46; margin-bottom: 32px; }
+    .site-name { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: #a1a1aa; }
+    h1 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; line-height: 1.2; margin-top: 8px; }
+    .price {
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 800;
+      color: #ef4444;
+      margin: 16px 0;
+    }
+    .hero-img {
+      width: 100%; border-radius: 8px; aspect-ratio: 16/9;
+      object-fit: cover; background: #27272a;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 32px 0;
+    }
+    .spec-card {
+      background: #27272a;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .spec-label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: #a1a1aa; }
+    .spec-value { font-size: 1rem; font-weight: 600; margin-top: 4px; }
+    .description { margin: 32px 0; }
+    .description p { margin-bottom: 16px; color: #d4d4d8; }
+    .cta-btn {
+      display: inline-block;
+      background: #ef4444;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 8px;
+      margin: 24px 0;
+      letter-spacing: .02em;
+      text-align: center;
+    }
+    .cta-btn:hover { background: #dc2626; }
+    .recalls {
+      margin-top: 40px;
+      padding: 20px;
+      background: #451a1a;
+      border: 1px solid #7f1d1d;
+      border-radius: 8px;
+    }
+    .recalls h2 { color: #fca5a5; margin-bottom: 12px; font-size: 1rem; }
+    .recall-item { margin-bottom: 16px; }
+    .recall-item strong { display: block; color: #fca5a5; }
+    .recall-item p { font-size: 0.875rem; color: #d4d4d8; margin-top: 4px; }
+    .recall-item .remedy { font-style: italic; color: #86efac; }
+    .vin-footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #3f3f46;
+      font-size: 0.75rem;
+      color: #71717a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="site-name">Skipster South Florida</div>
+      <h1>2019 Chevrolet Corvette ZR1</h1>
+      <div class="price">$159,953</div>
+    </header>
 
-const fs = require('fs');
+    <img
+      class="hero-img"
+      src="https://southflorida.skipster.ai/images/1G1Y43D98K5800352.jpg"
+      alt="2019 Chevrolet Corvette ZR1"
+      loading="eager"
+    >
 
-const vehicles = JSON.parse(fs.readFileSync('vehicles.json', 'utf8'));
+    <div class="specs-grid">
+      <div class="spec-card">
+        <div class="spec-label">Mileage</div>
+        <div class="spec-value">18,114 mi</div>
+      </div>
+      
+      <div class="spec-card">
+        <div class="spec-label">Transmission</div>
+        <div class="spec-value">7-Speed Manual with Active Rev Matching</div>
+      </div>
+      
+      
+      
+      <div class="spec-card">
+        <div class="spec-label">Exterior</div>
+        <div class="spec-value">Torch Red</div>
+      </div>
+    </div>
 
-const zr1Description = `If you've been watching ZR1 prices and waiting for the right one — this is it.
+    <section class="description">
+      <p>The 2019 Chevrolet Corvette ZR1 is available now at Skipster South Florida for $159,953 with 18,114 miles. . Text us to take a look.</p>
+    </section>
 
-The 2019 Chevrolet Corvette ZR1 is the last of its kind. A supercharged 6.2L V8 pushing 755 horsepower, hand-built before GM changed direction entirely. New, these were pushing $130k base before options. Finding one under $160k with only 18,114 miles means someone bought it, drove it carefully, and now it's your turn.
+    <a class="cta-btn" href="sms:?&body=Hi%2C%20I%27m%20interested%20in%20the%202019%20Chevrolet%20Corvette%20ZR1%20%E2%80%94%20VIN%201G1Y43D98K5800352">
+      Text About This Vehicle
+    </a>
 
-This isn't a trailer queen. It's a car you actually drive.
+    
 
-— 755hp supercharged V8 — factory, not modified
-— 18,114 miles — barely broken in for a ZR1
-— 8-speed automatic — more comfortable daily than you'd expect
-— Open recall on airbag software — free dealer fix, takes an hour
-— One of the last true American supercars at this price point
-
-In South Florida, this car turns heads from Brickell to the Overseas Highway. Nothing else on the road touches it at this price.
-
-Text us to take a look — we'll make time for serious buyers.`;
-
-const updated = vehicles.map(v => {
-  if (v.vin === '1G1Y43D98K5800352') {
-    return { ...v, description: zr1Description };
-  }
-  return v;
-});
-
-fs.writeFileSync('vehicles.json', JSON.stringify(updated, null, 2), 'utf8');
-console.log('✅ ZR1 description injected into vehicles.json');
-console.log('👉 Now run: node prerender-vdps.js');
+    <div class="vin-footer">
+      VIN: 1G1Y43D98K5800352 &nbsp;|&nbsp; Grieco Chevrolet of Fort Lauderdale
+    </div>
+  </div>
+</body>
+</html>
